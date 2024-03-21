@@ -21,9 +21,10 @@ export const PageSection = ({
   const pathname = usePathname();
   return (
     <>
-      {pathname === '/' ? (
+      {pathname === '/' && (
         <span className="font-semibold md:px-6">{title}</span>
-      ) : (
+      )}
+      {pathname === '/projects' && (
         <span className="text-4xl font-bold md:px-6 mb-6 md:mb-4">
           All Projects
         </span>
