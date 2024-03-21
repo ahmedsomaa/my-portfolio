@@ -9,7 +9,7 @@ export const PROFILE = {
   title: 'Software Engineer',
   description: `Hi, I'm Ahmed. I'm based in Tanta, Gharbia.`,
   socials: [
-    { platform: 'X', link: 'https://twitter.com/abokahfa', icon: <XIcon /> },
+    { platform: 'X', link: 'https://twitter.com/som3aware', icon: <XIcon /> },
     {
       platform: 'GitHub',
       link: 'https://github.com/ahmedsomaa',
@@ -22,7 +22,7 @@ export const PROFILE = {
     },
     {
       platform: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/abokahfa/',
+      link: 'https://www.linkedin.com/in/som3aware/',
       icon: <LinkedInIcon />,
     },
   ],
