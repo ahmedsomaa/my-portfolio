@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://som3aware.vercel.app/'),
-  title: { default: 'Ahmed Abu Qahf', template: '%s | Ahmed Abu Qahf' },
+  title: { default: 'Som3aware', template: '%s | Ahmed Abu Qahf' },
   description: 'Developer & YouTuber',
   openGraph: {
     title: 'Som3aware',
@@ -61,7 +61,7 @@ export default function RootLayout({
       <body
         className={`bg-primary text-secondary text-sm md:text-base ${inter.className}`}
       >
-        <main className="bg-white dark:bg-black min-h-screen flex flex-col items-center">
+        <main className="min-h-screen flex flex-col items-center">
           <MaxWidthWrapper>
             <div className="flex-1 w-full flex flex-col gap-8 items-center">
               {children}
