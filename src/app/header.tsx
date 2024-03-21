@@ -27,8 +27,9 @@ export default function Header() {
           return (
             <a
               key={idx}
-              href={social.link}
               target="_blank"
+              href={social.link}
+              title={social.platform}
               className={`${socialBorder}`}
             >
               {social.icon}
