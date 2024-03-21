@@ -7,8 +7,7 @@ export const PROFILE = {
   name: 'Ahmed Abu Qahf',
   headshot: '/avatar.webp',
   title: 'Software Engineer',
-  description: `Hi, I'm Ahmed. I'm based in Tanta, Gharbia. I am a full stack software engineer with a strong focus in front-end in React. 
-  I aim to create beautiful and functional software that is both intuitive and enjoyable for users.`,
+  description: `Hi, I'm Ahmed. I'm based in Tanta, Gharbia.`,
   socials: [
     { platform: 'X', link: 'https://twitter.com/abokahfa', icon: <XIcon /> },
     {
