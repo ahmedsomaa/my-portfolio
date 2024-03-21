@@ -16,3 +16,12 @@ export const PROJECTS = [
     link: 'https://editorsetup.vercel.app',
   },
 ];
+
+export interface IProject {
+  name: string;
+  slug: string;
+  link: string;
+  image: string;
+  featured: boolean;
+  description: string;
+}
