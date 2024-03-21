@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
 import { ArrowLeftIcon } from '@/components/icons/arrow-left';
-import PostCard from '@/components/PostCard';
+import { PostCard } from '@/components/PostCard';
 import { IPost } from '@/lib/posts';
 
 export default function Posts({
