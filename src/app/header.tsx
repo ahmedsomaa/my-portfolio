@@ -18,9 +18,7 @@ export default function Header() {
           className="rounded-full h-[48px] w-[48px]"
         />
         <div className="flex flex-col">
-          <span className="text-primary dark:text-white font-semibold">
-            {CONFIG.profile.name}
-          </span>
+          <span className="font-semibold">{CONFIG.profile.name}</span>
           <span className="text-secondaryDarker">{CONFIG.profile.title}</span>
         </div>
       </div>
