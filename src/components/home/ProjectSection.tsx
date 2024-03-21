@@ -1,7 +1,7 @@
 import { IProject } from '@/config/projects';
 
-import { FeaturedSection } from '../FeaturedSection';
-import ProjectCard from '../ProjectCard';
+import { PageSection } from '../PageSection';
+import { ProjectCard } from '../ProjectCard';
 
 interface ProjectSectionProps {
   projects: IProject[];
@@ -9,7 +9,7 @@ interface ProjectSectionProps {
 
 export const ProjectSection = ({ projects }: ProjectSectionProps) => {
   return (
-    <FeaturedSection
+    <PageSection
       title="Featured Projects"
       redirect={{ text: 'All Projects', url: '/projects' }}
     >
@@ -18,6 +18,6 @@ export const ProjectSection = ({ projects }: ProjectSectionProps) => {
           return <ProjectCard key={project.slug} project={project} />;
         })}
       </div>
-    </FeaturedSection>
+    </PageSection>
   );
 };

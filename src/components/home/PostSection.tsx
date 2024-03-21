@@ -1,8 +1,8 @@
 import { getPosts } from '@/lib/posts';
 import { Redis } from '@upstash/redis';
 
-import { FeaturedSection } from '../FeaturedSection';
-import PostCard from '../PostCard';
+import { PageSection } from '../PageSection';
+import { PostCard } from '../PostCard';
 
 const redis = Redis.fromEnv();
 
@@ -20,7 +20,7 @@ export const PostSection = async () => {
     {} as Record<string, number>,
   );
   return (
-    <FeaturedSection
+    <PageSection
       title="Recent Posts"
       redirect={{ text: 'All Posts', url: '/posts' }}
     >
@@ -41,6 +41,6 @@ export const PostSection = async () => {
             <PostCard key={post.slug} post={post} views={views[post.slug]} />
           ))}
       </div>
-    </FeaturedSection>
+    </PageSection>
   );
 };

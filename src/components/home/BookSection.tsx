@@ -1,11 +1,11 @@
 import CONFIG from '@/config';
 
 import { BookCard } from '../BookCard';
-import { FeaturedSection } from '../FeaturedSection';
+import { PageSection } from '../PageSection';
 
 export const BookSection = () => {
   return (
-    <FeaturedSection
+    <PageSection
       title="Recent Reads"
       redirect={{ text: "Books I've Read", url: '/reading' }}
     >
@@ -21,6 +21,6 @@ export const BookSection = () => {
             return <BookCard key={book.title} book={book} />;
           })}
       </div>
-    </FeaturedSection>
+    </PageSection>
   );
 };
