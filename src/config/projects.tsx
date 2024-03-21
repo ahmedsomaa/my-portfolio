@@ -4,7 +4,7 @@ export const PROJECTS = [
     name: 'SharpStudio',
     slug: 'sharp-studio',
     description: 'Hackable Image Processing.',
-    image: '/projects/sharp-studio.png',
+    image: '/projects/sharp-studio.svg',
     link: 'https://sharpstudio.vercel.app',
   },
   {
@@ -12,7 +12,7 @@ export const PROJECTS = [
     name: 'EditorSetup',
     slug: 'editor-setup',
     description: 'Find your next optimal Visual Studio Code setup.',
-    image: '/projects/editor-setup.png',
+    image: '/projects/editor-setup.svg',
     link: 'https://editorsetup.vercel.app',
   },
 ];
