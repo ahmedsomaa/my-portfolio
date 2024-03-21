@@ -33,7 +33,7 @@ export const PROFILE = {
       icon: <DevDotToIcon />,
     },
     {
-      platform: 'MyCV',
+      platform: 'CV',
       link: '/docs/cv.pdf',
       icon: (
         <FileTextIcon
