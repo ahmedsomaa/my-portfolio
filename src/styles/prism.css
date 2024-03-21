@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 pre[class*='language-'] {
-  font-size: 12px;
+  font-size: 11px;
   font-family: 'Victor Mono', monospace;
   color: theme('colors.zinc.50');
   margin-top: 0rem !important;
