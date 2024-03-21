@@ -8,7 +8,7 @@ type Metadata = {
   image?: string;
   featured?: string;
   tag?: string;
-  isDraft?:string;
+  isDraft?: string;
 };
 
 function parseFrontmatter(fileContent: string) {
@@ -53,4 +53,10 @@ function getMDXData(dir: any) {
 
 export function getPosts() {
   return getMDXData(path.join(process.cwd(), 'src/content'));
+}
+
+export interface IPost {
+  slug: string;
+  content: string;
+  metadata: Metadata;
 }
