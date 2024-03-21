@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://som3aware.vercel.app/'),
-  title: { default: 'Som3aware', template: '%s | Ahmed Abu Qahf' },
+  title: { default: 'Som3aware', template: '%s | Som3aware' },
   description: 'Developer & YouTuber',
   openGraph: {
     title: 'Som3aware',
