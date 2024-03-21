@@ -15,7 +15,7 @@ interface ProjectCardProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   project: IProject;
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export const ProjectCard = ({ project }: ProjectCardProps) => {
   const pathname = usePathname();
 
   return (
@@ -40,4 +40,4 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       {pathname === '/' ? <ArrowUpRightIcon /> : <LinkIcon />}
     </Link>
   );
-}
+};

@@ -10,7 +10,7 @@ interface PostCardProps {
   views: number;
 }
 
-export default function PostCard({ post, views }: PostCardProps) {
+export const PostCard = ({ post, views }: PostCardProps) => {
   return (
     <Link
       key={post.slug}
@@ -42,4 +42,4 @@ export default function PostCard({ post, views }: PostCardProps) {
       <ArrowUpRightIcon />
     </Link>
   );
-}
+};

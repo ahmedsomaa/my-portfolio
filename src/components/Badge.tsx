@@ -4,7 +4,7 @@ import React from 'react';
 
 interface BadgeProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {}
 
-const Badge = (props: BadgeProps) => {
+export const Badge = (props: BadgeProps) => {
   return (
     <a
       {...props}
@@ -13,5 +13,3 @@ const Badge = (props: BadgeProps) => {
     />
   );
 };
-
-export default Badge;
