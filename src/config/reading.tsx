@@ -7,3 +7,11 @@ export const READING = [
     dateFinished: '2024-04-10',
   },
 ];
+
+export interface IBook {
+  link: string;
+  title: string;
+  rating: number;
+  author: string;
+  dateFinished: string;
+}
