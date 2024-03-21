@@ -18,16 +18,16 @@ export default async function PostsPage() {
 
   let publishedPosts = allPosts.filter((post) => !post.metadata.isDraft);
 
-  // const views = (
-  //   await redis.mget<number[]>(
-  //     ...publishedPosts.map((p) => ['pageviews', 'posts', p.slug].join(':')),
-  //   )
-  // ).reduce(
-  //   (acc, v, i) => {
-  //     acc[publishedPosts[i].slug] = v ?? 0;
-  //     return acc;
-  //   },
-  //   {} as Record<string, number>,
-  // );
-  return <Posts allPosts={publishedPosts} />;
+  const views = (
+    await redis.mget<number[]>(
+      ...publishedPosts.map((p) => ['pageviews', 'posts', p.slug].join(':')),
+    )
+  ).reduce(
+    (acc, v, i) => {
+      acc[publishedPosts[i].slug] = v ?? 0;
+      return acc;
+    },
+    {} as Record<string, number>,
+  );
+  return <Posts allPosts={publishedPosts} views={views} />;
 }
