@@ -10,7 +10,7 @@ import rehypePrism from 'rehype-prism-plus';
 
 import { CopyButton } from './copy-button';
 
-const inconsolata = Victor_Mono({ subsets: ['latin'], display: 'swap' });
+const monoFont = Victor_Mono({ subsets: ['latin'], display: 'swap' });
 
 const options = {
   mdxOptions: {
@@ -74,7 +74,7 @@ function Callout(props: any) {
 
 function CodeBlock({ children, ...props }: { children: any; title: string }) {
   return (
-    <div className={inconsolata.className}>
+    <div className={monoFont.className}>
       <div className="rounded-t-md px-4 py-2 bg-black text-sm border-neutral-700 border-x-[1px] border-t-[1px] text-secondaryDarker flex flex-row justify-between items-center">
         <div>{props.title}</div>
 
