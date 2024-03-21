@@ -9,7 +9,7 @@ export default function AboutMe() {
     <>
       <span className="font-semibold">About me</span>
       <p className="text-justify leading-6 text-secondaryDark">
-        {CONFIG.profile.description}. I am a full stack software engineer with a
+        {CONFIG.profile.description} I am a full stack software engineer with a
         strong focus in front-end in{' '}
         <Badge title="react" href="https://react.dev/">
           <Image
