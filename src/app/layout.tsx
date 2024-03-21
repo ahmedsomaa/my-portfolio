@@ -1,21 +1,20 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+
+import { GeistSans } from 'geist/font/sans';
 
 import '../styles/globals.css';
 
 import MaxWidthWrapper from '@/components/max-width-wrapper';
 
-const inter = Inter({ subsets: ['latin'] });
-
 export const metadata: Metadata = {
   metadataBase: new URL('https://som3aware.vercel.app/'),
   title: { default: 'Som3aware', template: '%s | Som3aware' },
-  description: 'Developer & YouTuber',
+  description: 'Software Engineer',
   openGraph: {
     title: 'Som3aware',
     description: 'Software Engineer',
     url: 'https://som3aware.vercel.app/',
-    siteName: 'Ahmed Abu Qahf',
+    siteName: 'Som3aware',
     locale: 'en_US',
     type: 'website',
   },
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Ahmed Abu Qahf',
+    title: 'Som3aware',
     card: 'summary_large_image',
   },
 };
@@ -59,7 +58,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`bg-primary text-secondary text-sm md:text-base ${inter.className}`}
+        className={`bg-primary text-secondary text-sm md:text-base ${GeistSans.className}`}
       >
         <main className="min-h-screen flex flex-col items-center">
           <MaxWidthWrapper>
