@@ -21,7 +21,7 @@ export async function GET(req: NextRequest) {
           flexDirection: 'column',
           alignItems: 'flex-start',
           justifyContent: 'center',
-          backgroundImage: 'url(/og-bg.png)',
+          backgroundImage: 'url(https://som3aware.vercel.app/og-bg.png)',
         }}
       >
         <div
