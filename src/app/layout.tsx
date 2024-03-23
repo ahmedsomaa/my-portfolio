@@ -59,7 +59,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`bg-primary text-secondary text-sm md:text-base ${fontSans.className}`}
+        className={`bg-gradient-to-br from-zinc-900 to-zinc-700 text-secondary text-sm md:text-base ${fontSans.className}`}
       >
         <GrainyBackground />
         <main className="min-h-screen flex flex-col items-center">
