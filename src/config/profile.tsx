@@ -1,3 +1,4 @@
+import { EmailIcon } from '@/components/icons/email';
 import { GithubIcon } from '@/components/icons/github';
 import { LinkedInIcon } from '@/components/icons/linkedin';
 import { ResumeIcon } from '@/components/icons/resume';
@@ -10,6 +11,11 @@ export const PROFILE = {
   title: 'Software Engineer',
   description: `Hi, I'm Ahmed. I'm based in Tanta, Gharbia.`,
   socials: [
+    {
+      platform: 'Mail',
+      link: 'emailto:abokahfa@gmail.com',
+      icon: <EmailIcon />,
+    },
     { platform: 'X', link: 'https://twitter.com/som3aware', icon: <XIcon /> },
     {
       platform: 'GitHub',
