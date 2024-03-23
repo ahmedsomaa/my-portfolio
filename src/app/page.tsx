@@ -4,6 +4,7 @@ import { ProjectSection } from '@/components/home/ProjectSection';
 import CONFIG from '@/config';
 
 import AboutMe from '../components/home/AboutMe';
+import { Footer } from './footer';
 import Header from './header';
 
 export const revalidate = 0;
@@ -38,6 +39,7 @@ export default async function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
