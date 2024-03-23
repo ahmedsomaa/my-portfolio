@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 
-import { GeistSans } from 'geist/font/sans';
-
 import '../styles/globals.css';
 
+import { GrainyBackground } from '@/components/GrainyBackground';
 import MaxWidthWrapper from '@/components/max-width-wrapper';
+
+import { fontSans } from './fonts';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://som3aware.vercel.app/'),
@@ -58,8 +59,9 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`bg-primary text-secondary text-sm md:text-base ${GeistSans.className}`}
+        className={`bg-primary text-secondary text-sm md:text-base ${fontSans.className}`}
       >
+        <GrainyBackground />
         <main className="min-h-screen flex flex-col items-center">
           <MaxWidthWrapper>
             <div className="flex-1 w-full flex flex-col gap-8 items-center">
