@@ -25,7 +25,7 @@ export async function generateMetadata({
 
   let { metadata } = post;
   let ogImage = metadata.image
-    ? metadata.image
+    ? `https://www.som3aware.vercel.app${metadata.image}`
     : `https://www.som3aware.vercel.app/og?title=${metadata.title}`;
 
   return {
