@@ -1,9 +1,8 @@
-import { DevDotToIcon } from '@/components/icons/devdotto';
 import { GithubIcon } from '@/components/icons/github';
 import { LinkedInIcon } from '@/components/icons/linkedin';
+import { ResumeIcon } from '@/components/icons/resume';
 import { XIcon } from '@/components/icons/x';
 import { YouTubeIcon } from '@/components/icons/youtube';
-import { FileTextIcon } from 'lucide-react';
 
 export const PROFILE = {
   name: 'Ahmed Abu Qahf',
@@ -28,19 +27,9 @@ export const PROFILE = {
       icon: <LinkedInIcon />,
     },
     {
-      platform: 'DevDotTo',
-      link: 'https://dev.to/som3aware',
-      icon: <DevDotToIcon />,
-    },
-    {
       platform: 'My Resume',
       link: '/docs/my-resume.pdf',
-      icon: (
-        <FileTextIcon
-          size={22}
-          className="text-secondaryDarker group-hover:text-secondaryDark duration-200"
-        />
-      ),
+      icon: <ResumeIcon />,
     },
   ],
 };
