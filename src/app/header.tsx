@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import CONFIG from '@/config';
 
-const socialBorder = `border group hover:border-secondaryDarker duration-200 rounded px-1.5 py-1 border-neutral-800 items-center flex`;
+const socialBorder = `border-none group hover:border-secondaryDarker duration-200 rounded px-1.5 py-1 border-neutral-800 items-center flex`;
 
 export default function Header() {
   return (
@@ -14,7 +14,7 @@ export default function Header() {
           width={100}
           height={100}
           src={CONFIG.profile.headshot}
-          alt="profile headshot for ahmed abu qahf"
+          alt="profile headshot for Ahmed Abu Qahf"
           className="rounded-full h-[48px] w-[48px]"
         />
         <div className="flex flex-col">
