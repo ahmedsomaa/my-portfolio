@@ -13,7 +13,7 @@ export const PROFILE = {
   socials: [
     {
       platform: 'Mail',
-      link: 'emailto:abokahfa@gmail.com',
+      link: 'mailto:abokahfa@gmail.com',
       icon: <EmailIcon />,
     },
     { platform: 'X', link: 'https://twitter.com/som3aware', icon: <XIcon /> },
