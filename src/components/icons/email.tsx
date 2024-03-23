@@ -10,7 +10,7 @@ export const EmailIcon = () => {
       viewBox="0 0 24 24"
       color="currentColor"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-secondaryDarker group-hover:text-secondaryDark duration-200"
+      className="text-secondaryDarker group-hover:text-[#EA4335] duration-200"
     >
       <path
         d="M9 9L13.5 12L18 9"

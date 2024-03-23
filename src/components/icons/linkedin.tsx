@@ -10,7 +10,7 @@ export const LinkedInIcon = () => {
       fill="none"
       color="currentColor"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-secondaryDarker group-hover:text-secondaryDark duration-200"
+      className="text-secondaryDarker group-hover:text-[#0A66C2] duration-200"
     >
       <path
         d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"

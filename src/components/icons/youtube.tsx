@@ -9,7 +9,7 @@ export const YouTubeIcon = () => {
       viewBox="0 0 24 24"
       fill="none"
       color="currentColor"
-      className="text-secondaryDarker group-hover:text-secondaryDark duration-200"
+      className="text-secondaryDarker group-hover:text-[#FF0000] duration-200"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
