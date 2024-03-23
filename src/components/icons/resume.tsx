@@ -1,40 +1,47 @@
 import React from 'react';
 
-export const LinkedInIcon = () => {
+export const ResumeIcon = () => {
   return (
     <svg
+      fill="none"
       width="24px"
       height="24px"
-      strokeWidth="1.5"
       viewBox="0 0 24 24"
-      fill="none"
+      strokeWidth="1.5"
       color="currentColor"
       xmlns="http://www.w3.org/2000/svg"
       className="text-secondaryDarker group-hover:text-secondaryDark duration-200"
     >
       <path
-        d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+        d="M4 21.4V2.6C4 2.26863 4.26863 2 4.6 2H16.2515C16.4106 2 16.5632 2.06321 16.6757 2.17574L19.8243 5.32426C19.9368 5.43679 20 5.5894 20 5.74853V21.4C20 21.7314 19.7314 22 19.4 22H4.6C4.26863 22 4 21.7314 4 21.4Z"
         stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       ></path>
       <path
-        d="M7 17V13.5V10"
+        d="M8 10L16 10"
         stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       ></path>
       <path
-        d="M11 17V13.75M11 10V13.75M11 13.75C11 10 17 10 17 13.75V17"
+        d="M8 18L16 18"
         stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       ></path>
       <path
-        d="M7 7.01L7.01 6.99889"
+        d="M8 14L12 14"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
+      <path
+        d="M16 2V5.4C16 5.73137 16.2686 6 16.6 6H20"
         stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"

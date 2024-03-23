@@ -3,15 +3,25 @@ import React from 'react';
 export const XIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="18"
-      height="18"
+      width="24px"
+      height="24px"
+      fill="none"
+      strokeWidth="1.5"
       viewBox="0 0 24 24"
+      color="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
       className="text-secondaryDarker group-hover:text-secondaryDark duration-200"
     >
       <path
-        fill="currentColor"
-        d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231l5.45-6.231Zm-1.161 17.52h1.833L7.045 4.126H5.078L17.044 19.77Z"
+        d="M16.8198 20.7684L3.75317 3.96836C3.44664 3.57425 3.72749 3 4.22678 3H6.70655C6.8917 3 7.06649 3.08548 7.18016 3.23164L20.2468 20.0316C20.5534 20.4258 20.2725 21 19.7732 21H17.2935C17.1083 21 16.9335 20.9145 16.8198 20.7684Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      ></path>
+      <path
+        d="M20 3L4 21"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        strokeLinecap="round"
       ></path>
     </svg>
   );
