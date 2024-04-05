@@ -3,50 +3,34 @@ import React from 'react';
 export const ResumeIcon = () => {
   return (
     <svg
-      fill="none"
       width="24px"
       height="24px"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      color="currentColor"
+      viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
       className="text-secondaryDarker group-hover:text-secondaryDark duration-200"
     >
-      <path
-        d="M4 21.4V2.6C4 2.26863 4.26863 2 4.6 2H16.2515C16.4106 2 16.5632 2.06321 16.6757 2.17574L19.8243 5.32426C19.9368 5.43679 20 5.5894 20 5.74853V21.4C20 21.7314 19.7314 22 19.4 22H4.6C4.26863 22 4 21.7314 4 21.4Z"
+      <path fill="none" d="M0 0h256v256H0z" />
+      <rect
+        width={148.27}
+        height={187.59}
+        x={53.87}
+        y={34.21}
+        fill="none"
         stroke="currentColor"
-        strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-      ></path>
+        strokeWidth={16}
+        rx={8}
+        transform="rotate(10.02 127.95 127.985)"
+      />
       <path
-        d="M8 10L16 10"
+        fill="none"
         stroke="currentColor"
-        strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-      ></path>
-      <path
-        d="M8 18L16 18"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      ></path>
-      <path
-        d="M8 14L12 14"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      ></path>
-      <path
-        d="M16 2V5.4C16 5.73137 16.2686 6 16.6 6H20"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      ></path>
+        strokeWidth={16}
+        d="m97.22 59.81 82.98 14.66M174.66 105.98 91.67 91.33M127.62 130.17l-41.49-7.33"
+      />
     </svg>
   );
 };

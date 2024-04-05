@@ -5,24 +5,41 @@ export const XIcon = () => {
     <svg
       width="24px"
       height="24px"
-      fill="none"
-      strokeWidth="1.5"
-      viewBox="0 0 24 24"
-      color="currentColor"
+      viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
       className="text-secondaryDarker group-hover:text-[#000000] duration-200"
     >
-      <path
-        d="M16.8198 20.7684L3.75317 3.96836C3.44664 3.57425 3.72749 3 4.22678 3H6.70655C6.8917 3 7.06649 3.08548 7.18016 3.23164L20.2468 20.0316C20.5534 20.4258 20.2725 21 19.7732 21H17.2935C17.1083 21 16.9335 20.9145 16.8198 20.7684Z"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      ></path>
-      <path
-        d="M20 3L4 21"
-        strokeWidth="1.5"
+      <rect width="256" height="256" fill="none" />
+      <polygon
+        points="48 40 96 40 208 216 160 216 48 40"
+        fill="none"
         stroke="currentColor"
         strokeLinecap="round"
-      ></path>
+        strokeLinejoin="round"
+        strokeWidth="16"
+      />
+      <line
+        x1="113.88"
+        y1="143.53"
+        x2="48"
+        y2="216"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="16"
+      />
+      <line
+        x1="208"
+        y1="40"
+        x2="142.12"
+        y2="112.47"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="16"
+      />
     </svg>
   );
 };

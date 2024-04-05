@@ -3,42 +3,29 @@ import React from 'react';
 export const EmailIcon = () => {
   return (
     <svg
-      fill="none"
-      width="24px"
-      height="24px"
-      strokeWidth="1.5"
-      viewBox="0 0 24 24"
-      color="currentColor"
       xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      height="24px"
+      width="24px"
       className="text-secondaryDarker group-hover:text-[#EA4335] duration-200"
     >
+      <rect width="256" height="256" fill="none" />
       <path
-        d="M9 9L13.5 12L18 9"
+        d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z"
+        fill="none"
         stroke="currentColor"
-        strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-      ></path>
-      <path
-        d="M3 13.5H5"
+        strokeWidth="16"
+      />
+      <polyline
+        points="224 56 128 144 32 56"
+        fill="none"
         stroke="currentColor"
-        strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-      ></path>
-      <path
-        d="M1 10.5H5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      ></path>
-      <path
-        d="M5 7.5V7C5 5.89543 5.89543 5 7 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H7C5.89543 19 5 18.1046 5 17V16.5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      ></path>
+        strokeWidth="16"
+      />
     </svg>
   );
 };
