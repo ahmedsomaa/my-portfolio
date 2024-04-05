@@ -3,11 +3,7 @@ import type { Config } from 'tailwindcss';
 import colors from 'tailwindcss/colors';
 
 const config: Config = {
-  content: [
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-    // Path to Tremor module
-    './node_modules/@tremor/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     transparent: 'transparent',
     current: 'currentColor',
