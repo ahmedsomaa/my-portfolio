@@ -7,7 +7,7 @@ Bootstrapped from [here](https://github.com/hqasmei/portfolio) with my updates.
 - Framework: [Next](https://nextjs.org/)
 - Styling: [Tailwind](https://tailwindcss.com/)
 - Database: [Upstash](https://upstash.com/)
-- Icons: [Iconair](https://iconoir.com/)
+- Icons: [Phosphor](https://phosphoricons.com)
 - Project Logos: [LogoFast](https://shipfa.st/tools/logo-fast)
 - Deployment: [Vercel](https://vercel.com/home)
 - Brand Icon Colors: [Simple Icons](https://simpleicons.org/)
@@ -22,7 +22,7 @@ Bootstrapped from [here](https://github.com/hqasmei/portfolio) with my updates.
 - I changed the background to a gradient, you can use [Tailwind CSS Gradient Generator](https://tailwindcomponents.com/gradient-generator/) to make yours.
 - I added a grainy texture to the background, you can find it [here](./src//components/GrainyBackground.tsx);
 - I separated the original `config.tsx` file into multiple files, [`profile.tsx`](./src/config/profile.tsx), [`projects.tsx`](./src//config/projects.tsx) & [`reading.tsx`](./src/config/reading.tsx), so it would be much easier to add your data.
-- I changed the social media icons to ones from [Iconair](https://iconoir.com/).
+- I changed the social media icons to ones from [Phosphor](https://phosphoricons.com).
 - I removed the border around the social media icons and changed the hover text color with their original brand color, you can find this at [SimpleIcons](https://simpleicons.org/).
 
 ## Running Locally
