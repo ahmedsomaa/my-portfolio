@@ -1,5 +1,6 @@
 import { EmailIcon } from '@/components/icons/email';
 import { GithubIcon } from '@/components/icons/github';
+import { HashnodeIcon } from '@/components/icons/hashnode';
 import { LinkedInIcon } from '@/components/icons/linkedin';
 import { ResumeIcon } from '@/components/icons/resume';
 import { XIcon } from '@/components/icons/x';
@@ -31,6 +32,11 @@ export const PROFILE = {
       platform: 'LinkedIn',
       link: 'https://www.linkedin.com/in/som3aware/',
       icon: <LinkedInIcon />,
+    },
+    {
+      platform: 'Hashnode',
+      link: 'https://som3aware.hashnode.dev/',
+      icon: <HashnodeIcon />,
     },
     {
       platform: 'My Resume',
