@@ -8,29 +8,34 @@ image: '/ogs/customizing-list-styles-with-css.webp'
 tag: 'technical'
 ---
 
-- <a href="#introduction">Introduction</a>
-- <a href="#clear-default-styles">Step 1: Clearing the Default Styling</a>
-- <a href="#spice-bullets-numbers">Step 2: Spicing Up Bullets and Numbers</a>
-- <a href="#spacing">Step 3: Adjusting Spacing for Readability</a>
-- <a href="#positioning">Step 4: Positioning Your List Style</a>
-- <a href="#putting-all">Putting It All Together: A Stylish List Showcase</a>
 
-<section id="introduction">
+<TOC>
+- [Introduction](#introduction)
+- [Step 1: Clearing the Default Styling](#clear-default-styles)
+- [Step 2: Spicing Up Bullets and Numbers](#spice-bullets-numbers)
 
-<h2>Introduction</h2>
+  - [Basic Customization](#basic-customization)
+  - [Getting Creative with Custom Bullets](#getting-creative-with-custom-bullets)
 
-<p align="justify">
+
+- [Step 3: Adjusting Spacing for Readability](#spacing)
+- [Step 4: Positioning Your List Style](#positioning)
+- [Putting It All Together: A Stylish List Showcase](#putting-all)
+</TOC>
+
+
+<h2 id="introduction">Introduction</h2>
+
+<JustifiedText>
 Hey there, web wizards! 🧙‍♂️ Last time we dove into the essentials of HTML lists, understanding how they help us organize content in a user-friendly way. Now, let’s jazz things up a bit! It's time to move from basic lists to beautifully styled masterpieces with the magic of CSS. Just as Edna from _The Incredibles_ says, “Darling, it's all about detail.” So, let's get those details right!
-</p>
+</JustifiedText>
 
-</section>
 
-<section id="clear-default-styles">
-<h2>Step 1: Clearing the Default Styling 🚫</h2>
+<h2 id="clear-default-styles">Step 1: Clearing the Default Styling 🚫</h2>
 
-<p align="justify">
+<JustifiedText>
 First things first, let’s strip away those default styles that browsers apply to lists. This is like setting a blank canvas before you start painting:
-</p>
+</JustifiedText>
 
 <CodeBlock title="styles.css">
   ```css showLineNumbers
@@ -52,20 +57,18 @@ alt="an ordered and un-ordered lists with no bullet points nor numbering"
 src="/posts/clear-style.webp"
 />
 
-<p align="justify">
+<JustifiedText>
 This CSS removes bullets/numbers and resets padding and margins, giving you full control over the list's appearance.
-</p>
+</JustifiedText>
 
-</section>
 
-<section id="spice-bullets-numbers">
-<h2>Step 2: Spicing Up Bullets and Numbers 🎨</h2>
+<h2 id="spice-bullets-numbers">Step 2: Spicing Up Bullets and Numbers 🎨</h2>
 
-<h3>Basic Customization</h3>
+<h3 id="basic-customization">Basic Customization</h3>
 
-<p align="justify">
+<JustifiedText>
 Now, let's add our own style! For unordered lists, you might go for something simple yet classy:
-</p>
+</JustifiedText>
 
 <CodeBlock title="styles.css">
   ```css showLineNumbers
@@ -84,9 +87,9 @@ alt="an un-ordered list with squared bullet points"
 src="/posts/square-ul.webp"
 />
 
-<p align="justify">
+<JustifiedText>
 For ordered lists, choosing a different numbering style could spice things up:
-</p>
+</JustifiedText>
 
 <CodeBlock title="styles.css">
   ```css showLineNumbers
@@ -105,11 +108,11 @@ alt="an ordered list with roman numbers"
 src="/posts/roman-ol.webp"
 />
 
-<h3>Getting Creative with Custom Bullets</h3>
+<h3 id="getting-creative-with-custom-bullets">Getting Creative with Custom Bullets</h3>
 
-<p align="justify">
+<JustifiedText>
 Want to get more creative? Replace standard bullets with images or emojis. This is like choosing the perfect accessories for your outfit:
-</p>
+</JustifiedText>
 
 <CodeBlock title="styles.css">
   ```css showLineNumbers
@@ -133,18 +136,16 @@ alt="an un-ordered list with sparkle emoji as bullets"
 src="/posts/emoji-ul.webp"
 />
 
-<p align="justify">
+<JustifiedText>
 This CSS uses a pseudo-element to add a sparkle emoji before each list item, making your list pop with personality!
-</p>
+</JustifiedText>
 
-</section>
 
-<section id="spacing">
-<h2>Step 3: Adjusting Spacing for Readability 📏</h2>
+<h2 id="spacing">Step 3: Adjusting Spacing for Readability 📏</h2>
 
-<p align="justify">
+<JustifiedText>
 Spacing is key to making your list readable. Let's adjust the padding and margin to ensure your content breathes:
-</p>
+</JustifiedText>
 
 <CodeBlock title="styles.css">
   ```css showLineNumbers
@@ -165,18 +166,16 @@ alt="an ordered and un-ordered lists with 20px left padding and bottom margin"
 src="/posts/lists-spacing.webp"
 />
 
-<p align="justify">
+<JustifiedText>
 These adjustments help your lists stand out from the rest of the content, making them easier on the eyes.
-</p>
+</JustifiedText>
 
-</section>
 
-<section id="positioning">
-<h2>Step 4: Positioning Your List Style 📍</h2>
+<h2 id="positioning">Step 4: Positioning Your List Style 📍</h2>
 
-<p align="justify">
+<JustifiedText>
 Sometimes, the default positioning of list markers doesn't cut it. Use `list-style-position` to tweak where your bullets or numbers sit:
-</p>
+</JustifiedText>
 
 <CodeBlock title="styles.css">
   ```css showLineNumbers
@@ -195,19 +194,17 @@ alt="an un-ordered list with list style position inside"
 src="/posts/list-style-position.webp"
 />
 
-<p align="justify">
+<JustifiedText>
 
 Setting it to `inside` can change the look dramatically, often used for a more streamlined appearance.
-</p>
+</JustifiedText>
 
-</section>
 
-<section id="putting-all">
-<h2>Putting It All Together: A Stylish List Showcase 🌈</h2>
+<h2 id="putting-all">Putting It All Together: A Stylish List Showcase 🌈</h2>
 
-<p align="justify">
+<JustifiedText>
 Let's see everything in action with a fully styled list:
-</p>
+</JustifiedText>
 
 <CodeBlock title="index.html">
   ```html showLineNumbers
@@ -245,12 +242,10 @@ Let's see everything in action with a fully styled list:
 ````
 </CodeBlock>
 
-<p align="justify">
+<JustifiedText>
 This setup not only makes your list unique but also integrates seamlessly with your site's overall design.
 
 And there you have it! You've gone from basic lists to custom-tailored displays of information. Remember, like any good design, it's all about expressing your style and enhancing user experience. Experiment with different styles and see what best fits your site's personality.
 
 Next up, we'll explore how to create list using CSS counters. Stay tuned, and keep listing! 🎨👩‍💻
-</p>
-
-</section>
+</JustifiedText>

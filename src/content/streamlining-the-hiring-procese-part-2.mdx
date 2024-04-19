@@ -8,33 +8,35 @@ image: '/ogs/streamlining-the-hiring-procese-part-2.webp'
 tag: 'technical'
 ---
 
-## Table of Contents
+<TOC>
+- [Introduction](#introduction)
+- [LangChain - The Wizardry Behind Our Talent Show Tech](#langchain---the-wizardry-behind-our-talent-show-tech)
 
-- <a href="#introduction">Introduction</a>
-- <a href="#langchain---the-wizardry-behind-our-talent-show-tech">LangChain - The Wizardry Behind Our Talent Show Tech</a>
-  - <a href="#document-loaders">Document Loaders</a>
-  - <a href="#document-transformers">Document Transformers</a>
-  - <a href="#prompts">Prompts</a>
-  - <a href="#embeddings">Embeddings</a>
-  - <a href="#vectorstores-and-retrievers">Vectorstores and Retrievers</a>
-  - <a href="#chains">Chains</a>
-- <a href="#unlocking-the-magic-of-llms---the-talent-show-behind-the-scenes">Unlocking the Magic of LLMs - The Talent Show Behind the Scenes</a>
-  - <a href="#meet-llms---the-language-wizards">Meet LLMs - The Language Wizards</a>
-  - <a href="#llms-dance-of-understanding">LLMs' Dance of Understanding</a>
-  - <a href="#whats-in-their-talent-bag">What's in Their Talent Bag?</a>
-  - <a href="#but-wait-theres-a-twist">LLMs' Limitations</a>
+  - [Document Loaders](#document-loaders)
+  - [Document Transformers](#document-transformers)
+  - [Prompts](#prompts)
+  - [Embeddings](#embeddings)
+  - [Vectorstores and Retrievers](#vectorstores-and-retrievers)
+  - [Chains](#chains)
 
-- <a href="#bringing-stars-to-the-stage---your-hr-talent-scout-journey">Bringing Stars to the Stage - Your HR Talent Scout Journey</a>
+- [Unlocking the Magic of LLMs - The Talent Show Behind the Scenes](#unlocking-the-magic-of-llms---the-talent-show-behind-the-scenes)
 
-<section id="introduction">
+  - [Meet LLMs - The Language Wizards](#meet-llms---the-language-wizards)
+  - [LLMs' Dance of Understanding](#llms-dance-of-understanding)
+  - [What's in Their Talent Bag?](#whats-in-their-talent-bag)
+  - [LLMs' Limitations](#but-wait-theres-a-twist)
 
-<h2>Introduction</h2>
+- [Bringing Stars to the Stage - Your HR Talent Scout Journey](#bringing-stars-to-the-stage---your-hr-talent-scout-journey)
+</TOC>
 
-<p align="justify">
+
+<h2 id="introduction">Introduction</h2>
+
+<JustifiedText>
   In the [first part](https://som3aware.vercel.app/posts/streamlining-the-hiring-procese-part-1), we discussed how to empower
   LLMs and LangChain to streamline the hiring process, and you all might be wondering, _what's
   langchain?_ _What's LLM?_
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -44,10 +46,10 @@ tag: 'technical'
   src="/posts/langchain-llm.webp"
 />
 
-<p align="justify">
+<JustifiedText>
   I could tell you to google them, but you might find them a bit complex to understand. So, like
   Thanos said, I'll do it myself and simply explain them to you here.
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -57,132 +59,106 @@ tag: 'technical'
   src="/posts/thanos.webp"
 />
 
-{/* section 1 end */}
-</section>
 
-<section id="langchain---the-wizardry-behind-our-talent-show-tech">
-<h2>LangChain - The Wizardry Behind Our Talent Show Tech</h2>
+<h2 id="langchain---the-wizardry-behind-our-talent-show-tech">LangChain - The Wizardry Behind Our Talent Show Tech</h2>
 
-<p align="justify">
+<JustifiedText>
 Imagine LangChain as the ultimate magician's wand or the infinity gauntlet in the world of tech. It was conjured by the tech wizard Harrison Chase in October 2022, and it's here to make building special tech tricks easier than ever!
 
 Think of LangChain as your backstage crew, ready to lift the heaviest stuff for you. It's like having a team of strong stagehands who take care of all the tough work behind the scenes. 🎩✨
 
 Here's the scoop on how LangChain works its magic for our Talent Show Talent Scouter Bot:
 
-</p>
+</JustifiedText>
 
-<section id="document-loaders">
-<h3>Document Loaders</h3>
+<h3 id="document-loaders">Document Loaders</h3>
 
-<p align="justify">
+<JustifiedText>
   Just like our backstage team gathers props from everywhere, LangChain's Document Loaders gather
   data from different places like PDFs, Word files, spreadsheets, and more. It's like having helpers
   who bring all the necessary materials for the show.
-</p>
-</section>
+</JustifiedText>
 
-<section id="document-transformers">
-<h3>Document Transformers</h3>
+<h3 id="document-transformers">Document Transformers</h3>
 
-<p align="justify">
+<JustifiedText>
   Sometimes, the data is as long as a never-ending story. LangChain's Document Transformers come to
   the rescue by breaking down the data into smaller, manageable parts. Imagine turning a long script
   into bite-sized scenes!
-</p>
-</section>
+</JustifiedText>
 
+<h3 id="prompts">Prompts</h3>
 
-<section id="prompts">
-<h3>Prompts</h3>
-
-<p align="justify">
+<JustifiedText>
   Think of Prompts as creating special scripts for our talented performers (LLMs). We tell them
   exactly what we want, and they dazzle us with their responses. It's like giving them cues for an
   amazing act!
-</p>
-</section>
+</JustifiedText>
 
-<section id="embeddings">
-<h3>Embeddings</h3>
+<h3 id="embeddings">Embeddings</h3>
 
-<p align="justify">
+<JustifiedText>
   Embeddings are like secret codes that LangChain uses to understand the hidden meaning behind
   words. It's like translating our messages into a magical language that LangChain and the LLMs can
   both understand.
-</p>
-</section>
+</JustifiedText>
 
+<h3 id="vectorstores-and-retrievers">Vectorstores and Retrievers</h3>
 
-<section id="vectorstores-and-retrievers">
-<h3>Vectorstores and Retrievers</h3>
-
-<p align="justify">
+<JustifiedText>
   Picture this - Vectorstores are like our organized shelves where LangChain keeps the magical
   translations. And Retrievers? They're the librarians who fetch the exact book we need from those
   shelves. It's like asking for a specific chapter from a huge library, and they find it in a snap!
-</p>
-</section>
+</JustifiedText>
 
-<section id="chains">
-<h3>Chains</h3>
+<h3 id="chains">Chains</h3>
 
-<p align="justify">
+<JustifiedText>
   Imagine Chains as the magical strings that tie everything together in our tech-infused talent
   show. Just like a puppet master orchestrates their puppets, Chains make sure our questions and
   answers dance harmoniously.
-</p>
+</JustifiedText>
 
-<p align="justify">
+<JustifiedText>
 Here's the secret sauce: Chains take your curious questions, wrap them in a cloak of understanding (kind of like a translator for wizards), and then they whisper to the super-smart LLM model. It's like asking a question and having the perfect answer appear right before your eyes!
 
 Think of Chains as your backstage navigators, guiding the show's flow and making sure everything runs like a well-choreographed performance. With Chains at the helm, our Talent Scouter Bot waltzes through the world of data, finding the most enchanting insights and presenting them to you in the most delightful way! 🎭🌟🔗
 
 So, you see, LangChain is like the ultimate tech magician's toolkit. It takes all the hard tricks and turns them into a grand performance without us having to break a sweat. With LangChain by our side, building our Talent Scouter Bot is as magical as watching a show come to life on stage! 🎭🪄🌟
 
-</p>
-</section>
+</JustifiedText>
 
-{/* section 2 end */}
-</section>
+<h2 id="unlocking-the-magic-of-llms---the-talent-show-behind-the-scenes">Unlocking the Magic of LLMs - The Talent Show Behind the Scenes</h2>
 
-<section id="unlocking-the-magic-of-llms---the-talent-show-behind-the-scenes">
-<h2>Unlocking the Magic of LLMs - The Talent Show Behind the Scenes</h2>
-
-<p align="justify">
+<JustifiedText>
   Hey there, fellow show enthusiasts! Before we dive into the dazzling world of LLMs, let's break
   down the basics in a way that even a backstage crew member would understand. 🎭✨
-</p>
+</JustifiedText>
 
-<section id="meet-llms---the-language-wizards">
-<h3>Meet LLMs - The Language Wizards</h3>
+<h3 id="meet-llms---the-language-wizards">Meet LLMs - The Language Wizards</h3>
 
-<p align="justify">
+<JustifiedText>
   LLMs, or Large Language Models, are like the maestros of language. Think of them as the ultimate
   wordsmiths, trained on tons of text to understand and predict what comes next. It's like having a
   crystal ball that can tell you the next word in a sentence, almost like magic!
-</p>
-</section>
+</JustifiedText>
 
-<section id="llms-dance-of-understanding">
-<h3>LLMs' Dance of Understanding</h3>
+<h3 id="llms-dance-of-understanding">LLMs' Dance of Understanding</h3>
 
-<p align="justify">
+<JustifiedText>
   These language geniuses use fancy algorithms (think of them as dance steps) to learn patterns and
   connections between words and sentences. Imagine learning a new dance routine by watching lots of
   performances - that's how LLMs learn from text!
-</p>
-</section>
+</JustifiedText>
 
-<section id="whats-in-their-talent-bag">
-<h3>What's in Their Talent Bag?</h3>
+<h3 id="whats-in-their-talent-bag">What's in Their Talent Bag?</h3>
 
-<p align="justify">LLMs can do so much! They're like a multitasking magician. They can:</p>
+<JustifiedText>LLMs can do so much! They're like a multitasking magician. They can:</JustifiedText>
 
-<p align="justify">
+<JustifiedText>
   **1\. Write Stories:** Imagine LLMs composing stories that tug at your heartstrings or even
   cooking up lines of code.
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -192,10 +168,10 @@ So, you see, LangChain is like the ultimate tech magician's toolkit. It takes al
   src="/posts/write-stories.webp"
 />
 
-<p align="justify">
+<JustifiedText>
   **2.** **Speak Different Languages:** They're like master translators, turning one language into
   another with unbelievable accuracy.
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -205,10 +181,10 @@ So, you see, LangChain is like the ultimate tech magician's toolkit. It takes al
   src="/posts/diff-langs.webp"
 />
 
-<p align="justify">
+<JustifiedText>
   **3.** **Feel the Vibes:** LLMs can tell if a text sounds happy, sad, or just neutral - like
   reading the mood of a room.
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -218,10 +194,10 @@ So, you see, LangChain is like the ultimate tech magician's toolkit. It takes al
   src="/posts/vibes.webp"
 />
 
-<p align="justify">
+<JustifiedText>
   **4\. Sum It Up:** They're experts at turning long stories into quick summaries that capture all
   the important stuff.
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -231,10 +207,10 @@ So, you see, LangChain is like the ultimate tech magician's toolkit. It takes al
   src="/posts/gpt-sum.webp"
 />
 
-<p align="justify">
+<JustifiedText>
   **5\. Answer Questions:** LLMs can give smart answers to your questions, just like chatting with a
   friend.
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -244,10 +220,10 @@ So, you see, LangChain is like the ultimate tech magician's toolkit. It takes al
   src="/posts/gpt-qa.webp"
 />
 
-<p align="justify">
+<JustifiedText>
   **6.** **Understand Human Talk:** They're like super detectives, decoding text to figure out what
   it's all about.
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -257,10 +233,10 @@ So, you see, LangChain is like the ultimate tech magician's toolkit. It takes al
   src="/posts/gpt-human.webp"
 />
 
-<p align="justify">
+<JustifiedText>
   **7.** **Finish Your Sentences:** LLMs can suggest words to complete your sentences, making
   writing a breeze.
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -270,10 +246,10 @@ So, you see, LangChain is like the ultimate tech magician's toolkit. It takes al
   src="/posts/llm-complete-sentences.webp"
 />
 
-<p align="justify">
+<JustifiedText>
   **8\. Chat Like a Pro:** They're the life of the text-based party, powering chat-bots that chat
   just like humans.
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -283,10 +259,10 @@ So, you see, LangChain is like the ultimate tech magician's toolkit. It takes al
   src="/posts/gpt-pdf-chat.webp"
 />
 
-<p align="justify">
+<JustifiedText>
   **9.** **Word Magic:** LLMs help make your writing better by suggesting edits and fresh ways to
   say things.
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -296,9 +272,9 @@ So, you see, LangChain is like the ultimate tech magician's toolkit. It takes al
   src="/posts/word-magic.webp"
 />
 
-<p align="justify">
+<JustifiedText>
   **10\. Data Searching:** They're like search experts, finding the right info in a sea of text.
-</p>
+</JustifiedText>
 
 <Image
   priority
@@ -308,12 +284,9 @@ So, you see, LangChain is like the ultimate tech magician's toolkit. It takes al
   src="/posts/data-search-gpt.webp"
 />
 
-</section>
+<h3 id="but-wait-theres-a-twist"> But Wait, There's a Twist!</h3>
 
-<section id="">
-<h3> But Wait, There's a Twist!</h3>
-
-<p align="justify">
+<JustifiedText>
 Just like any talent show, even LLMs have their quirks. Here are a few:
 
 **1\. Hungry for Data:** They need loads of data to shine, which can be a bit of a data feast.
@@ -326,26 +299,18 @@ Just like any talent show, even LLMs have their quirks. Here are a few:
 
 So, there you have it, the lowdown on LLMs in our magical talent show! They're like the coolest acts with amazing tricks, though they have their own unique quirks. Just like a talented performer, they're here to make our tech world shine bright. 🌟🎉🔮
 
-</p>
-</section>
+</JustifiedText>
 
-{/* section 3 end */}
-</section>
+<h2 id="bringing-stars-to-the-stage---your-hr-talent-scout-journey">Bringing Stars to the Stage - Your HR Talent Scout Journey</h2>
 
-<section id="bringing-stars-to-the-stage---your-hr-talent-scout-journey">
-<h2>Bringing Stars to the Stage - Your HR Talent Scout Journey</h2>
-
-<p align="justify">
+<JustifiedText>
 As our curtains draw to a close on this adventure, imagine you're standing in the spotlight of a breathtaking talent show finale. Just like the talent scouts who seek out the brightest stars, you've now embarked on a journey empowered by cutting-edge technology.
 
 With your very own Talent Scouter Bot, powered by LangChain and the enchanting LLMs, you're ready to uncover remarkable talents and build your dream team. It's like having a magical assistant that whispers insights in your ear as you make those all-important choices.
 
 So, go forth and shine! Let the Talent Scouter Bot be your guide, navigating the seas of resumes and finding the performers who will dazzle your organization. The show must go on, and with the magic of technology by your side, your HR talent scout journey is destined to be a masterpiece. 🌟🎤🔮
 
-</p>
-
-{/* section 4 end */}
-</section>
+</JustifiedText>
 
 <Image
   priority
