@@ -7,7 +7,6 @@ import CONFIG from '@/config';
 export default function AboutMe() {
   return (
     <>
-      <span className="font-semibold">About me</span>
       <p className="text-justify leading-6 text-secondaryDark">
         {CONFIG.profile.description} I am a full stack software engineer with a
         strong focus in front-end in{' '}
@@ -24,6 +23,7 @@ export default function AboutMe() {
         . I aim to create beautiful and functional software that is both
         intuitive and enjoyable for users.
       </p>
+      <br />
       <p className="text-justify leading-6 text-secondaryDark">
         I have a passion for learning, and I am constantly seeking to improve my
         skills through avid <span className="inline-link">reading</span> and{' '}
