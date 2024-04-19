@@ -85,7 +85,22 @@ function CodeBlock({ children, ...props }: { children: any; title: string }) {
   );
 }
 
+function TOC({ children }: { children: any }) {
+  return (
+    <details id="toc" className="hover:cursor-pointer">
+      <summary className="uppercase">On this Page</summary>
+      {children}
+    </details>
+  );
+}
+
+function JustifiedText({ children }: { children: string }) {
+  return <p className="text-justify">{children}</p>;
+}
+
 let components = {
+  TOC,
+  JustifiedText,
   Image: RoundedImage,
   a: CustomLink,
   Callout,
