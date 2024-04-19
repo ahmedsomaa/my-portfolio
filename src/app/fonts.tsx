@@ -1,7 +1,12 @@
-import localFont from 'next/font/local';
+import { Familjen_Grotesk } from 'next/font/google';
 
-export const fontSans = localFont({
-  src: './fonts/HubotSans[slnt,wdth,wght].ttf',
+export const fontSans = Familjen_Grotesk({
+  subsets: ['latin'],
   display: 'swap',
-  weight: '200 900',
 });
+
+// export const fontSans = localFont({
+//   src: './fonts/HubotSans[slnt,wdth,wght].ttf',
+//   display: 'swap',
+//   weight: '200 900',
+// });
