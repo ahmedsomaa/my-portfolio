@@ -1,9 +1,5 @@
-import { BookSection } from '@/components/home/BookSection';
-import { PostSection } from '@/components/home/PostSection';
-import { ProjectSection } from '@/components/home/ProjectSection';
-import CONFIG from '@/config';
+import { BentoGridSection } from '@/components/home/BentoGridSection';
 
-import AboutMe from '../components/home/AboutMe';
 import { Footer } from './footer';
 import Header from './header';
 
@@ -14,28 +10,19 @@ export default async function Home() {
     <>
       <Header />
       <div className="flex flex-col space-y-6 md:space-y-10 pb-10">
-        <div className="flex flex-col  md:px-6">
+        <div className="flex flex-col md:px-6">
           <div className="flex flex-col space-y-2">
-            <AboutMe />
+            {/* <AboutMe /> */}
+            <p className="text-4xl text-center">Hey, I&apos;am Ahmed!</p>
+            <p className="text-4xl text-center">
+              Welcome to my space on the web!
+            </p>
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6">
-          {/* Featured Projects */}
+        <div className="flex flex-col md:px-6">
           <div className="flex flex-col space-y-2">
-            <ProjectSection
-              projects={CONFIG.projects.filter((project) => project.featured)}
-            />
-          </div>
-
-          {/* Featured Posts */}
-          <div className="flex flex-col space-y-2">
-            <PostSection />
-          </div>
-
-          {/* Featured Reads */}
-          <div className="flex flex-col space-y-2">
-            <BookSection />
+            <BentoGridSection />
           </div>
         </div>
       </div>
