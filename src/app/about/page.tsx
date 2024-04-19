@@ -1,11 +1,13 @@
 import Link from 'next/link';
 
+import { ExperienceCard } from '@/components/ExperienceCard';
 import AboutMe from '@/components/home/AboutMe';
 import { ArrowLeftIcon } from '@/components/icons/arrow-left';
+import CONFIG from '@/config';
 
 export const metadata = {
   title: 'About',
-  description: 'Here are all more details about me.',
+  description: 'Here are more details about me.',
 };
 
 export default function AboutPage() {
@@ -32,7 +34,18 @@ export default function AboutPage() {
             <span className="text-4xl font-bold md:px-6 mb-6 md:mb-4">
               Experience
             </span>
-            <div className="md:px-6">Coming soon...</div>
+            <div className="md:px-6">
+              <div className="flex flex-col space-y-8 md:space-y-1">
+                {CONFIG.experience.map((experience) => {
+                  return (
+                    <ExperienceCard
+                      key={experience.id}
+                      experience={experience}
+                    />
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>

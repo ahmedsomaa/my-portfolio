@@ -33,7 +33,7 @@ const items = [
   {
     href: '/about',
     title: 'About me',
-    description: 'Get to know me better',
+    description: 'Find more about who I am',
     header: (
       <Image
         width={0}
