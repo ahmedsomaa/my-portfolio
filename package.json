@@ -29,8 +29,7 @@
     "react-dom": "latest",
     "rehype-prism-plus": "^2.0.0",
     "sugar-high": "^0.5.6",
-    "tailwind-merge": "^2.2.2",
-    "unist-util-visit": "^5.0.0"
+    "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
     "@types/node": "^20",
