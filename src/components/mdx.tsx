@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Victor_Mono } from 'next/font/google';
+import { Fira_Code } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -10,7 +10,7 @@ import rehypePrism from 'rehype-prism-plus';
 
 import { CopyButton } from './copy-button';
 
-const monoFont = Victor_Mono({ subsets: ['latin'], display: 'swap' });
+const monoFont = Fira_Code({ subsets: ['latin'], display: 'swap' });
 
 const options = {
   mdxOptions: {
