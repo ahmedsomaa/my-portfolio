@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 pre[class*='language-'] {
-  font-size: 11px;
+  font-size: 12px;
   font-family: 'Fira Code', monospace;
   color: theme('colors.zinc.50');
   margin-top: 0rem !important;
