@@ -56,10 +56,10 @@ export default function Posts({
             Personal
           </Link>
           <Link
-            href="/posts?tag=book-notes"
+            href="/posts?tag=tips"
             className={`${tag === 'book-notes' ? 'text-secondaryDark underline' : 'text-secondaryDarker'} hover:text-secondaryDark duration-200 hover:underline `}
           >
-            Book Notes
+            Hacks and Tips
           </Link>
           <Link
             href="/posts?tag=random"
