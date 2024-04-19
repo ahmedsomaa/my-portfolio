@@ -13,7 +13,7 @@ export default async function Home() {
         <div className="flex flex-col md:px-6">
           <div className="flex flex-col space-y-2">
             {/* <AboutMe /> */}
-            <p className="text-4xl text-center">Hey, I&apos;am Ahmed!</p>
+            <p className="text-4xl text-center">Hey there, I&apos;am Ahmed!</p>
             <p className="text-4xl text-center">
               Welcome to my space on the web!
             </p>
