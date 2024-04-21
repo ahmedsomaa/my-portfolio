@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className="flex flex-row items-center space-x-3">
         <div className="flex flex-col">
           <span className="text-secondaryDarker font-normal text-sm lowercase">
-            {`© ${date.getFullYear()} ${CONFIG.profile.name}`}
+            {`© ${date.getFullYear()} ${CONFIG.profile.logoText}`}
           </span>
         </div>
       </div>
