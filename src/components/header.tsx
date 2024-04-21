@@ -12,7 +12,7 @@ export function Header() {
         <div className="flex flex-col">
           <Link href="/">
             <span className="font-semibold text-sm lowercase">
-              {CONFIG.profile.name}
+              {CONFIG.profile.logoText}
             </span>
           </Link>
         </div>
