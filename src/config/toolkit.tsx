@@ -1,14 +1,14 @@
-import { BitwardenIcon } from '@/components/icons/bitwarden';
-import { FigmaIcon } from '@/components/icons/figma';
-import { FirefoxIcon } from '@/components/icons/firefox';
-import { GithubSWIcon } from '@/components/icons/github-sw';
-import { GmailIcon } from '@/components/icons/gmail';
-import { HttpieIcon } from '@/components/icons/httpie';
-import { JiraIcon } from '@/components/icons/jira';
-import { GoogleMeetIcon } from '@/components/icons/meet';
-import { StarshipIcon } from '@/components/icons/starship';
-import { WindowsTerminalIcon } from '@/components/icons/terminal';
-import { VSCodeIcon } from '@/components/icons/vscode';
+import { BitwardenIcon } from '@/components/icons/software/bitwarden';
+import { FigmaIcon } from '@/components/icons/software/figma';
+import { FirefoxIcon } from '@/components/icons/software/firefox';
+import { GithubSWIcon } from '@/components/icons/software/github-sw';
+import { GmailIcon } from '@/components/icons/software/gmail';
+import { HttpieIcon } from '@/components/icons/software/httpie';
+import { JiraIcon } from '@/components/icons/software/jira';
+import { GoogleMeetIcon } from '@/components/icons/software/meet';
+import { StarshipIcon } from '@/components/icons/software/starship';
+import { WindowsTerminalIcon } from '@/components/icons/software/terminal';
+import { VSCodeIcon } from '@/components/icons/software/vscode';
 
 export const TOOLKIT = {
   SOFTWARE: [
@@ -73,7 +73,7 @@ export const TOOLKIT = {
       className: 'text-[#00897B] hover:dark:border-[#00897B]',
     },
     {
-      title: 'WinTerminal',
+      title: 'Win Terminal',
       icon: <WindowsTerminalIcon />,
       href: 'https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&hl=en-eg&gl=EG',
       className: 'text-[#fff] hover:dark:border-[#fff]',
