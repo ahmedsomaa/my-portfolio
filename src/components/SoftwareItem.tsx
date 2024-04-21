@@ -18,13 +18,15 @@ export function SoftwareItem({
       href={href}
       target="_blank"
       className={cn(
-        'no-underline shadow-lg border border-zinc-900 dark:bg-gradient-to-b from-zinc-900 to-neutral-700 flex flex-col items-center justify-center transition duration-200 group/card rounded-lg p-4',
+        'h-32 w-32 no-underline shadow-lg border border-gray-50/15 dark:bg-gray-50/5 group/card rounded-lg',
         className,
       )}
     >
-      {icon}
-      <div className="group-hover/card:translate-y-2 transition duration-200">
-        <div className="font-bold mb-2 mt-2">{title}</div>
+      <div className="h-full w-full flex flex-col items-center justify-center transition duration-200">
+        {icon}
+        <div className="group-hover/card:translate-y-2 transition duration-200">
+          <div className="font-normal mb-2 mt-2 lowercase">{title}</div>
+        </div>
       </div>
     </a>
   );
