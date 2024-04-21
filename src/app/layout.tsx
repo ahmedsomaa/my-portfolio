@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 
 import '../styles/globals.css';
 
-import { GrainyBackground } from '@/components/GrainyBackground';
 import MaxWidthWrapper from '@/components/max-width-wrapper';
 
+import { Footer } from '../components/footer';
+import { Header } from '../components/header';
 import { fontSans } from './fonts';
 
 export const metadata: Metadata = {
@@ -59,12 +60,12 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`bg-gradient-to-br from-zinc-900 to-zinc-700 text-secondary text-sm md:text-base ${fontSans.className}`}
+        className={`bg-[#121212] text-secondary text-sm md:text-sm ${fontSans.className}`}
       >
-        <GrainyBackground />
         <main className="min-h-screen flex flex-col items-center">
           <MaxWidthWrapper>
-            <div className="flex-1 w-full flex flex-col gap-8 items-center">
+            <div className="flex-1 w-full flex flex-col gap-6 items-center">
+              <Header />
               {children}
             </div>
           </MaxWidthWrapper>
