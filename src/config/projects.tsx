@@ -1,7 +1,7 @@
 export const PROJECTS = [
   {
     featured: true,
-    name: 'SharpStudio',
+    name: 'Sharp Studio',
     slug: 'sharp-studio',
     description: 'Hackable Image Processing',
     image: '/projects/sharp-studio.svg',
@@ -9,7 +9,7 @@ export const PROJECTS = [
   },
   {
     featured: true,
-    name: 'EditorSetup',
+    name: 'Editor Setup',
     slug: 'editor-setup',
     description: 'Find your next optimal Visual Studio Code setup',
     image: '/projects/editor-setup.svg',
@@ -17,7 +17,7 @@ export const PROJECTS = [
   },
   {
     featured: true,
-    name: 'KonstantKreative Ad Analyzer',
+    name: 'Konstant Kreative Ad Analyzer',
     slug: 'kk-ad-analyzer',
     description: 'AI app to analyze image ads using GPT-4 Vision',
     image: '/projects/kk-ad-analyzer.svg',
@@ -25,7 +25,7 @@ export const PROJECTS = [
   },
   {
     featured: false,
-    name: 'CovidTracker',
+    name: 'Covid Tracker',
     slug: 'covid-tracker',
     description: 'App to track covid patients',
     image: '/projects/covid-tracker.svg',
@@ -33,7 +33,7 @@ export const PROJECTS = [
   },
   {
     featured: false,
-    name: 'StoreAPI',
+    name: 'Store API',
     slug: 'store-api',
     description: 'Node API for an online store',
     image: '/projects/store-api.svg',
