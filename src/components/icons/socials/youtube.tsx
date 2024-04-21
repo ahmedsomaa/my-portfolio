@@ -1,13 +1,13 @@
 import React from 'react';
 
-export const GithubIcon = () => {
+export const YouTubeIcon = () => {
   return (
     <svg
-      height="24px"
-      widths="24px"
+      width="16px"
+      height="16px"
       viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-secondaryDarker group-hover:text-[#181717] duration-200"
+      className="text-secondaryDarker group-hover:text-[#FF0000] duration-200"
     >
       <path fill="none" d="M0 0h256v256H0z" />
       <path
@@ -16,7 +16,7 @@ export const GithubIcon = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={16}
-        d="M119.83 56A52 52 0 0 0 76 32a51.92 51.92 0 0 0-3.49 44.7A49.28 49.28 0 0 0 64 104v8a48 48 0 0 0 48 48h48a48 48 0 0 0 48-48v-8a49.28 49.28 0 0 0-8.51-27.3A51.92 51.92 0 0 0 196 32a52 52 0 0 0-43.83 24ZM104 232v-40a32 32 0 0 1 32-32h0a32 32 0 0 1 32 32v40"
+        d="m160 128-48-32v64l48-32z"
       />
       <path
         fill="none"
@@ -24,7 +24,7 @@ export const GithubIcon = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={16}
-        d="M104 208H72a32 32 0 0 1-32-32 32 32 0 0 0-32-32"
+        d="M24 128c0 29.91 3.07 47.45 5.41 56.47A16 16 0 0 0 39 195.42C72.52 208.35 128 208 128 208s55.48.35 89-12.58a16 16 0 0 0 9.63-10.95c2.34-9 5.41-26.56 5.41-56.47s-3.07-47.45-5.41-56.47a16 16 0 0 0-9.63-11C183.48 47.65 128 48 128 48s-55.48-.35-89 12.58a16 16 0 0 0-9.63 11C27.07 80.54 24 98.09 24 128Z"
       />
     </svg>
   );

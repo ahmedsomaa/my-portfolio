@@ -4,8 +4,8 @@ export const HashnodeIcon = () => {
   return (
     <svg
       role="img"
-      width="24px"
-      height="24px"
+      width="16px"
+      height="16px"
       stroke="none"
       viewBox="0 0 24 24"
       fill="currentColor"

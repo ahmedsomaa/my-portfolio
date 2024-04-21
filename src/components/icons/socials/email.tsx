@@ -3,10 +3,10 @@ import React from 'react';
 export const EmailIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
+      width="16px"
+      height="16px"
       viewBox="0 0 256 256"
-      height="24px"
-      width="24px"
+      xmlns="http://www.w3.org/2000/svg"
       className="text-secondaryDarker group-hover:text-[#EA4335] duration-200"
     >
       <rect width="256" height="256" fill="none" />
