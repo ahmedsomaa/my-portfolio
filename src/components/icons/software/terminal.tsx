@@ -2,8 +2,8 @@ export const WindowsTerminalIcon = () => {
   return (
     <svg
       role="img"
-      width="64px"
-      height="64px"
+      width="32px"
+      height="32px"
       fill="#fff"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
