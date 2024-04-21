@@ -30,7 +30,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           width={40}
           height={40}
           src={project.image}
-          className="w-[40px] h-[40px]"
+          className="w-[40px] h-[40px] rounded-lg"
         />
         <div className="flex flex-col">
           <span className="dark:group-hover:text-white:">{project.name}</span>
