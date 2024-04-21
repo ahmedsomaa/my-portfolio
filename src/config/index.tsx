@@ -1,4 +1,5 @@
 import { EXPERIENCE } from './experience';
+import { POSTS_FILTER } from './posts';
 import { PROFILE } from './profile';
 import { PROJECTS } from './projects';
 import { READING } from './reading';
@@ -10,6 +11,7 @@ const CONFIG = {
   reading: READING,
   experience: EXPERIENCE,
   toolkit: TOOLKIT,
+  postsFilters: POSTS_FILTER,
 };
 
 export default CONFIG;
