@@ -11,7 +11,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        'grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ',
+        'grid md:grid-rows-9 grid-cols-1 md:grid-cols-9 gap-3 mx-auto ',
         className,
         fontSans.className,
       )}
@@ -25,9 +25,9 @@ export const BentoGridItem = ({
   className,
   title,
   description,
-  header,
-  icon,
   href,
+  titleStyle,
+  descriptionStyle,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -35,23 +35,21 @@ export const BentoGridItem = ({
   header?: React.ReactNode;
   icon?: React.ReactNode;
   href: string;
+  titleStyle?: string;
+  descriptionStyle?: string;
 }) => {
   return (
     <a
       href={href}
       className={cn(
-        'row-span-1 no-underline rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-transparent dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4',
+        'min-h-32 no-underline rounded-lg group/bento hover:shadow-lg transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-gray-50/5 dark:border-gray-50/15 dark:hover:border-2 bg-white border border-transparent space-y-4',
         className,
         fontSans.className,
       )}
     >
-      {header}
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
-        {icon}
-        <div className="font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
-          {title}
-        </div>
-        <div className="font-normal text-neutral-600 text-xs dark:text-neutral-300">
+      <div className="group-hover/bento:translate-y-2 transition duration-200 flex flex-col items-center justify-center gap-5 min-h-full">
+        <div className={cn('font-semibold text-4xl', titleStyle)}>{title}</div>
+        <div className={cn('font-light text-center text-xs', descriptionStyle)}>
           {description}
         </div>
       </div>
