@@ -102,7 +102,7 @@ export default async function Blog({ params }: { params: any }) {
           </span>
         </div>
       </div>
-      <article className="prose prose-invert pb-10">
+      <article className="prose prose-invert pb-10 text-sm">
         <CustomMDX source={post.content} />
       </article>
     </div>
