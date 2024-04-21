@@ -10,7 +10,7 @@ interface ExperienceCardProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
   return (
-    <div className="flex flex-row justify-between items-center duration-300 md:hover:bg-hoverBackground md:p-4 rounded-lg cursor-pointer">
+    <div className="flex flex-row justify-between items-center duration-300 md:hover:bg-hoverBackground md:p-2 rounded-lg cursor-pointer">
       <div className="flex flex-row space-x-4">
         <Image
           alt=""
