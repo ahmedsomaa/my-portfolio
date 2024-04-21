@@ -9,14 +9,14 @@ export const HardwareItem = ({
   description,
 }: HardwareItemProps) => {
   return (
-    <div className="flex flex-col min-h-36 justify-between">
+    <a
+      href={href}
+      className="flex flex-col min-h-28 justify-between border border-gray-50/5 hover:border hover:border-gray-50/15 p-2 rounded-lg"
+    >
       <div>
-        <p className="text-2xl font-bold">{title}</p>
-        <p className="text-neutral-400">{description}</p>
+        <p className="text-lg font-bold">{title}</p>
+        <p className="text-sm text-neutral-400">{description}</p>
       </div>
-      <a target="_blank" href={href} className="hover:underline">
-        Learn more
-      </a>
-    </div>
+    </a>
   );
 };
