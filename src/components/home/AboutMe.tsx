@@ -28,7 +28,9 @@ export default function AboutMe() {
         I have a passion for learning, and I am constantly seeking to improve my
         skills through avid <span className="inline-link">reading</span> and{' '}
         <Link href="/posts">
-          <span className="inline-link underline">writing</span>
+          <span className="inline-link underline hover:text-lime-300/95">
+            writing
+          </span>
         </Link>
         . Currently interested in{' '}
         <Badge title="typescript" href="https://www.typescriptlang.org/">
