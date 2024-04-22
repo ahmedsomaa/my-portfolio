@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 import { CustomMDX } from '@/components/mdx';
@@ -62,29 +62,30 @@ export default async function Blog({ params }: { params: any }) {
     0;
 
   return (
-    <div className="w-full">
+    <div className="w-full md:px-6">
       <ReportView slug={post.slug} />
-      <div className="flex flex-row space-x-4 mb-6 text-sm text-secondaryDarker">
-        <Link
-          href="/"
-          className="hover:text-secondaryDark duration-200 hover:underline"
-        >
-          Home
-        </Link>
-        <Link
-          href="/posts"
-          className="hover:text-secondaryDark duration-200 hover:underline"
-        >
-          More Posts
-        </Link>
+      {post.metadata.image && (
+        <Image
+          priority
+          width={600}
+          height={400}
+          unoptimized
+          src={post.metadata.image}
+          alt={'cover image for the post ' + post.metadata.title}
+          className="rounded-lg my-4 shadow-md shadow-zinc-900/95"
+        />
+      )}
+      <div className="space-y-1">
+        <h1 className="title font-bold text-2xl max-w-full">
+          {post.metadata.title}
+        </h1>
+        <p className="text-sm text-neutral-500/95">{post.metadata.summary}</p>
       </div>
-      <h1 className="title font-medium text-2xl tracking-tighter max-w-[650px]">
-        {post.metadata.title}
-      </h1>
+
       <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
-        <div className="flex flex-row space-x-2 items-center text-secondaryDarker">
+        <div className="flex flex-row space-x-2 items-center text-neutral-700/95 ">
           <span>{reformatDate(post.metadata.publishedAt)}</span>
-          <span className="h-1 w-1 bg-secondaryDarker rounded-full" />
+          <span className="h-1 w-1 bg-neutral-700/95 rounded-full" />
           <span>
             <span>
               {Intl.NumberFormat('en-US', { notation: 'compact' }).format(
@@ -93,7 +94,7 @@ export default async function Blog({ params }: { params: any }) {
               {' views'}
             </span>
           </span>
-          <span className="h-1 w-1 bg-secondaryDarker rounded-full" />
+          <span className="h-1 w-1 bg-neutral-700/95 rounded-full" />
           <span>
             <span>
               {calculateReadingTime(post.content)}
