@@ -1,17 +1,12 @@
 export const READING = [
   {
+    rating: 5,
+    finished: false,
     title: 'Refactoring UI',
+    dateFinished: '2024-04-10',
     author: 'Adam Wathan & Steve Schoger',
     link: 'https://www.refactoringui.com/',
-    rating: 0,
-    dateFinished: '2024-04-10',
   },
 ];
 
-export interface IBook {
-  link: string;
-  title: string;
-  rating: number;
-  author: string;
-  dateFinished: string;
-}
+export type IBook = (typeof READING)[0];
