@@ -18,7 +18,7 @@ export default function ToolkitPage() {
               tools
             </h2>
             <p className="text-sm font-light text-stone-500/95 md:px-6 mb-6 md:mb-4 lowercase">
-              a collection the software apps I use on a daily basis
+              a collection of the software apps I use on a daily basis
             </p>
           </div>
           <div className="md:px-6">
