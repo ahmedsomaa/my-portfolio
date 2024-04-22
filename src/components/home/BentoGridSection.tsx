@@ -35,7 +35,7 @@ const items = [
     title: 'Readings',
     titleStyle: 'text-sky-300/95 lowercase',
     descriptionStyle: 'text-sky-200/95 lowercase',
-    description: "Books I've recently read",
+    description: "Books  I've read or i'm currently reading",
     className:
       'md:row-start-7 md:row-span-3 md:col-start-1 md:col-span-3 dark:bg-gradient-to-bl dark:from-gray-50/5 dark:to-sky-300/5 hover:border-sky-300/95',
   },
