@@ -11,7 +11,7 @@ export const PROFILE = {
   name: 'Ahmed Abu Qahf',
   headshot: '/avatar.webp',
   title: 'Software Engineer',
-  description: `Hi, I'm Ahmed Abu Qahf. I'm based in Tanta, Egypt.`,
+  description: `Hi, I'm Ahmed Ismail. I'm based in Tanta, Egypt.`,
   socials: [
     {
       id: 'gmail',
