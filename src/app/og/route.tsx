@@ -29,14 +29,13 @@ export async function GET(req: NextRequest) {
       >
         <div
           style={{
+            fontSize: 60,
+            lineHeight: 1,
+            color: 'white',
+            display: 'flex',
             marginLeft: 100,
             marginRight: 100,
-            display: 'flex',
-            fontSize: 70,
-            letterSpacing: '-0.05em',
             fontStyle: 'normal',
-            color: 'white',
-            lineHeight: '70px',
             whiteSpace: 'pre-wrap',
             fontFamily: 'Familjen Grotesk SemiBold',
           }}
