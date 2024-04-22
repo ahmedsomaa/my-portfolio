@@ -13,10 +13,12 @@
     "@headlessui/tailwindcss": "^0.2.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@mdx-js/react": "^3.0.1",
+    "@radix-ui/react-tooltip": "^1.0.7",
     "@tailwindcss/typography": "^0.5.10",
     "@types/needle": "^3.3.0",
     "@upstash/redis": "^1.28.2",
     "axios": "^1.6.7",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.1.5",
     "geist": "^1.2.2",
@@ -29,7 +31,8 @@
     "react-dom": "latest",
     "rehype-prism-plus": "^2.0.0",
     "sugar-high": "^0.5.6",
-    "tailwind-merge": "^2.3.0"
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",

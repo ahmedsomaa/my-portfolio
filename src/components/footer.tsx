@@ -1,6 +1,13 @@
 import CONFIG from '@/config';
 
-const socialBorder = `border-none group hover:border-secondaryDarker duration-200 rounded px-1.5 py-1 border-neutral-800 items-center flex`;
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from './ui/tooltip';
+
+const socialBorder = `border-none group hover:border-neutral-500/95 duration-200 rounded px-1.5 py-1 border-neutral-800 items-center flex`;
 
 export const Footer = () => {
   const date = new Date();
@@ -8,17 +15,22 @@ export const Footer = () => {
   return (
     <footer className="flex flex-col justify-center items-center md:my-2 space-y-2 w-full md:px-6 max-w-3xl">
       <div className="flex flex-row items-center space-x-1">
-        {CONFIG.profile.socials.map((social) => (
-          <a
-            key={social.id}
-            target="_blank"
-            href={social.link}
-            title={social.platform}
-            className={`${socialBorder}`}
-          >
-            {social.icon}
-          </a>
-        ))}
+        <TooltipProvider delayDuration={50}>
+          {CONFIG.profile.socials.map((social) => (
+            <Tooltip key={social.id}>
+              <TooltipTrigger className={`${socialBorder}`}>
+                <a
+                  target="_blank"
+                  href={social.link}
+                  className="cursor-pointer"
+                >
+                  {social.icon}
+                </a>
+              </TooltipTrigger>
+              <TooltipContent side="top">{social.platform}</TooltipContent>
+            </Tooltip>
+          ))}
+        </TooltipProvider>
       </div>
       <div className="flex flex-row items-center">
         <div className="flex flex-col text-center">
