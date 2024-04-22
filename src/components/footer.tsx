@@ -6,15 +6,8 @@ export const Footer = () => {
   const date = new Date();
 
   return (
-    <footer className="flex flex-col justify-center items-center md:my-2 space-y-4 w-full md:px-6 max-w-3xl">
-      <div className="flex flex-row items-center space-x-3">
-        <div className="flex flex-col">
-          <span className="text-secondaryDarker font-normal text-sm lowercase">
-            {`© ${date.getFullYear()} ${CONFIG.profile.logoText}`}
-          </span>
-        </div>
-      </div>
-      <div className="flex flex-row space-x-2">
+    <footer className="flex flex-col justify-center items-center md:my-2 space-y-2 w-full md:px-6 max-w-3xl">
+      <div className="flex flex-row items-center space-x-1">
         {CONFIG.profile.socials.map((social) => (
           <a
             key={social.id}
@@ -26,6 +19,13 @@ export const Footer = () => {
             {social.icon}
           </a>
         ))}
+      </div>
+      <div className="flex flex-row items-center">
+        <div className="flex flex-col text-center">
+          <span className="text-secondaryDarker font-normal text-sm lowercase">
+            {`© ${date.getFullYear()} ${CONFIG.profile.logoText}`}
+          </span>
+        </div>
       </div>
     </footer>
   );
