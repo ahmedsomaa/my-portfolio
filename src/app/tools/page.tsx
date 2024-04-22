@@ -1,53 +1,39 @@
-import { HardwareItem } from '@/components/HardwareItem';
 import { SoftwareItem } from '@/components/SoftwareItem';
 import CONFIG from '@/config';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: 'Tools',
+  description: 'a collection the software apps I use on a daily basis'
+}
 
 export default function ToolkitPage() {
   return (
-    <div className="grid grid-cols-1 gap-10 pb-10 w-full">
+    <div className="grid grid-cols-1 gap-10 pb-10 w-full min-h-[40rem] max-h-[40rem]">
       <div className="flex flex-col">
         <div className="space-y-4">
-          <div className="space-y-3">
-            <span className="text-2xl font-bold lowercase md:px-6 mb-6 md:mb-4">
-              Software
-            </span>
-            <p className="text-sm font-light md:px-6 mb-6 md:mb-4">
-              Here&apos;s a list of the software I use on a daily basis:
+          <div className="space-y-1">
+            <h2 className="text-2xl font-bold lowercase text-neutral-50/95 md:px-6">
+              tools
+            </h2>
+            <p className="text-sm font-light text-neutral-500/95 md:px-6 mb-6 md:mb-4 lowercase">
+              a collection the software apps I use on a daily basis
             </p>
-            <div className="md:px-6">
-              <div className="grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-3">
-                {CONFIG.toolkit.SOFTWARE.map(
-                  ({ href, icon, title, className }) => (
-                    <SoftwareItem
-                      key={title}
-                      icon={icon}
-                      href={href}
-                      title={title}
-                      className={className}
-                    />
-                  ),
-                )}
-              </div>
-            </div>
           </div>
-          <div className="space-y-2">
-            <span className="text-2xl font-bold lowercase md:px-6 mb-6 md:mb-4">
-              Hardware
-            </span>
-            <p className="text-sm font-light lowercase md:px-6 mb-6 md:mb-4">
-              Here&apos;s a list of my hardware devices:
-            </p>
-            <div className="md:px-6">
-              <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-3">
-                {CONFIG.toolkit.HARDWARE.map(({ href, title, description }) => (
-                  <HardwareItem
+          <div className="md:px-6">
+            <div className="grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-3">
+              {CONFIG.toolkit.SOFTWARE.map(
+                ({ href, icon, title, className }) => (
+                  <SoftwareItem
                     key={title}
+                    icon={icon}
                     href={href}
                     title={title}
-                    description={description}
+                    className={className}
                   />
-                ))}
-              </div>
+                ),
+              )}
             </div>
           </div>
         </div>

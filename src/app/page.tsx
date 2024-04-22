@@ -6,7 +6,7 @@ export const revalidate = 0;
 export default async function Home() {
   return (
     <>
-      <div className="flex flex-col space-y-6 md:space-y-10 pb-10">
+      <div className="flex flex-col space-y-6 md:space-y-10 pb-10 min-h-[40rem] max-h-[40rem]">
         <div className="flex flex-col md:px-6">
           <div className="flex flex-col space-y-2">
             <h1 className="text-4xl text-center">
@@ -23,7 +23,6 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

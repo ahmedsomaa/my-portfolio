@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="grid grid-cols-1 gap-10 pb-10 w-full">
+    <div className="grid grid-cols-1 gap-10 pb-10 w-full min-h-[40rem] max-h-[40rem]">
       <div className="flex flex-col">
         <div className="space-y-6">
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold md:px-6 mb-6 md:mb-4 lowercase">
-              About me
+          <div className="space-y-2">
+            <h2 className="text-2xl font-bold text-neutral-50/95 md:px-6 lowercase">
+              about me
             </h2>
             <div className="md:px-6">
               <AboutMe />
@@ -27,7 +27,7 @@ export default function AboutPage() {
               Experience
             </h2>
             <div className="md:px-6">
-              <div className="flex flex-col space-y-8 md:space-y-2">
+              <div className="flex flex-col space-y-8 md:space-y-3">
                 {CONFIG.experience.map((experience) => {
                   return (
                     <ExperienceCard

@@ -9,8 +9,8 @@ const redis = Redis.fromEnv();
 export const revalidate = 0;
 
 export const metadata = {
-  title: 'Posts',
-  description: 'Read my thoughts.',
+  title: 'Blog',
+  description: 'explore and read my insightful and helpful blog posts',
 };
 
 export default async function PostsPage() {
