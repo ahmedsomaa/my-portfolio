@@ -1,4 +1,3 @@
-import { Footer } from '@/components/footer';
 import { BentoGridSection } from '@/components/home/BentoGridSection';
 
 export const revalidate = 0;
