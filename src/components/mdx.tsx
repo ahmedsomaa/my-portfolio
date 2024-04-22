@@ -88,7 +88,7 @@ function CodeBlock({ children, ...props }: { children: any; title: string }) {
 function TOC({ children }: { children: any }) {
   return (
     <details id="toc" className="hover:cursor-pointer">
-      <summary className="uppercase">On this Page</summary>
+      <summary className="lowercase text-lg">On this Page</summary>
       {children}
     </details>
   );
