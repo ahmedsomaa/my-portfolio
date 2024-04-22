@@ -19,15 +19,13 @@ export const BookCard = ({ book }: BookCardProps) => {
       href={book.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-row justify-between items-center duration-300 md:hover:bg-hoverBackground md:p-4 rounded-lg cursor-pointer min-h-[5rem] max-h-[5rem]"
+      className="flex flex-row justify-between items-center duration-300 md:hover:bg-neutral-800/95 md:p-4 rounded-lg cursor-pointer min-h-[5rem] max-h-[5rem]"
     >
       <div className="flex flex-row space-x-4">
         <div className="flex flex-col">
           <span className="font-bold text-neutral-50/95">{book.title} </span>
-          <span className="font-light text-neutral-500/95">
-            by {book.author}
-          </span>
-          <span className="font-light text-sm text-neutral-700/95">
+          <span className="font-light text-stone-400/95">by {book.author}</span>
+          <span className="font-light text-sm text-neutral-500/95">
             {book.finished ? (
               <>
                 `Finished: ${reformatDate(book.dateFinished)}`

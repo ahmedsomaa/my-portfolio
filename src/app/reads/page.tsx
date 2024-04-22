@@ -32,7 +32,7 @@ export default function ReadingPage() {
             <h2 className="text-2xl font-bold text-neutral-50/95 lowercase">
               readings
             </h2>
-            <span className="text-sm text-neutral-500/95 lowercase">
+            <span className="text-sm text-stone-400/95 lowercase">
               a collection of the books I&apos;ve read or i&apos;m currently
               reading
             </span>
@@ -43,7 +43,7 @@ export default function ReadingPage() {
               <div key={year}>
                 <h2 className="text-2xl font-bold my-4 md:px-6">
                   {year}{' '}
-                  <span className="font-medium text-base text-neutral-400">
+                  <span className="font-medium text-base text-stone-400/95">
                     ({books.length})
                   </span>
                 </h2>

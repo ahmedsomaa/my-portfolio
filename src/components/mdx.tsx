@@ -75,7 +75,7 @@ function Callout(props: any) {
 function CodeBlock({ children, ...props }: { children: any; title: string }) {
   return (
     <div className={monoFont.className}>
-      <div className="rounded-t-md px-4 py-2 bg-black text-sm border-neutral-700 border-x-[1px] border-t-[1px] text-secondaryDarker flex flex-row justify-between items-center">
+      <div className="rounded-t-md px-4 py-2 bg-black text-sm border-neutral-800/95 border-x-[1px] border-t-[1px] text-stone-400/95 flex flex-row justify-between items-center">
         <div>{props.title}</div>
 
         <CopyButton text={children.props.raw} />
@@ -88,7 +88,7 @@ function CodeBlock({ children, ...props }: { children: any; title: string }) {
 function TOC({ children }: { children: any }) {
   return (
     <details id="toc" className="hover:cursor-pointer">
-      <summary className="lowercase text-lg">On this Page</summary>
+      <summary className="uppercase text-lg">On this Page</summary>
       {children}
     </details>
   );

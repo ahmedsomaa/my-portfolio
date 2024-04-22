@@ -52,11 +52,11 @@ export default function Posts({
         <div className="space-y-1">
           <h2 className="text-2xl text-neutral-50/95 font-semibold md:px-6 lowercase">
             my blog{' '}
-            <span className="font-medium text-base text-neutral-500/95 ">
+            <span className="font-medium text-base text-stone-400/95 ">
               ({filteredPosts.length})
             </span>
           </h2>
-          <span className="text-sm text-neutral-500/95 font-light lowercase md:px-6">
+          <span className="text-sm text-stone-400/95 font-light lowercase md:px-6">
             explore and read my insightful and helpful blog posts
           </span>
         </div>
@@ -68,8 +68,8 @@ export default function Posts({
                 key={name}
                 href={href}
                 className={cn(
-                  'hover:text-neutral-50/95 duration-200 hover:underline text-neutral-50/95',
-                  _tag == tag && 'text-neutral-500/95 underline',
+                  'hover:text-neutral-50/95 duration-200 hover:underline text-stone-50/95',
+                  _tag == tag && 'text-stone-500/95 underline',
                 )}
               >
                 {name}
