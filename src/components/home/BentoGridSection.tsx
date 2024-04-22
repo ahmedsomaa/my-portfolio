@@ -23,7 +23,7 @@ export const BentoGridSection = () => {
 const items = [
   {
     href: '/posts',
-    title: 'Blogs',
+    title: 'Blog',
     titleStyle: 'text-lime-300/95 lowercase',
     descriptionStyle: 'text-lime-200/95 lowercase',
     description: 'Insightful and helpful content curated for you',
@@ -32,7 +32,7 @@ const items = [
   },
   {
     href: '/reads',
-    title: 'Reads',
+    title: 'Readings',
     titleStyle: 'text-sky-300/95 lowercase',
     descriptionStyle: 'text-sky-200/95 lowercase',
     description: "Books I've recently read",
