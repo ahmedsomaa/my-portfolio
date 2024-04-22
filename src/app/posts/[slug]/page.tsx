@@ -72,20 +72,20 @@ export default async function Blog({ params }: { params: any }) {
           unoptimized
           src={post.metadata.image}
           alt={'cover image for the post ' + post.metadata.title}
-          className="rounded-lg my-4 shadow-md shadow-zinc-900/95"
+          className="rounded-lg my-4 shadow-md shadow-stone-900/95"
         />
       )}
       <div className="space-y-1">
         <h1 className="title font-bold text-2xl max-w-full">
           {post.metadata.title}
         </h1>
-        <p className="text-sm text-neutral-500/95">{post.metadata.summary}</p>
+        <p className="text-base text-neutral-50/95">{post.metadata.summary}</p>
       </div>
 
       <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
-        <div className="flex flex-row space-x-2 items-center text-neutral-700/95 ">
+        <div className="flex flex-row space-x-2 items-center text-stone-400/95 ">
           <span>{reformatDate(post.metadata.publishedAt)}</span>
-          <span className="h-1 w-1 bg-neutral-700/95 rounded-full" />
+          <span className="h-1 w-1 bg-stone-400/95 rounded-full" />
           <span>
             <span>
               {Intl.NumberFormat('en-US', { notation: 'compact' }).format(
@@ -94,7 +94,7 @@ export default async function Blog({ params }: { params: any }) {
               {' views'}
             </span>
           </span>
-          <span className="h-1 w-1 bg-neutral-700/95 rounded-full" />
+          <span className="h-1 w-1 bg-stone-400/95 rounded-full" />
           <span>
             <span>
               {calculateReadingTime(post.content)}
