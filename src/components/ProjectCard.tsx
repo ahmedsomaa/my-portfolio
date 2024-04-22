@@ -22,7 +22,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
     <Link
       target="_blank"
       href={project.link}
-      className="flex flex-row justify-between items-center duration-300 md:hover:bg-hoverBackground md:p-4 rounded-lg cursor-pointer"
+      className="flex flex-row justify-between items-center duration-300 hover:bg-hoverBackground p-4 rounded-lg cursor-pointer"
     >
       <div className="flex flex-row space-x-4">
         <Image
@@ -33,8 +33,12 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           className="w-[40px] h-[40px] rounded-lg"
         />
         <div className="flex flex-col">
-          <span className="dark:group-hover:text-white:">{project.name}</span>
-          <span className="text-secondaryDarker">{project.description}</span>
+          <span className="font-bold text-neutral-50/95 lowercase">
+            {project.name}
+          </span>
+          <span className="font-light text-neutral-500/95 lowercase">
+            {project.description}
+          </span>
         </div>
       </div>
       {pathname === '/' ? <ArrowUpRightIcon /> : <LinkIcon />}

@@ -15,11 +15,13 @@ export const PostCard = ({ post, views }: PostCardProps) => {
     <Link
       key={post.slug}
       href={`/posts/${post.slug}`}
-      className="flex flex-row justify-between items-center duration-300 md:hover:bg-hoverBackground md:p-4 rounded-lg cursor-pointer"
+      className="flex flex-row justify-between items-center duration-300 hover:bg-hoverBackground p-4 rounded-lg cursor-pointer min-h-[5rem] max-h-[5rem]"
     >
-      <div className="flex flex-col space-y-2">
-        <span className="text-secondaryDark">{post.metadata.title}</span>
-        <div className="flex flex-row space-x-2 items-center text-secondaryDarker">
+      <div className="flex flex-col space-y-1">
+        <span className="text-neutral-50/95 font-bold lowercase">
+          {post.metadata.title}
+        </span>
+        <div className="flex flex-row space-x-2 items-center text-neutral-500/95 font-light lowercase">
           <span>{reformatDate(post.metadata.publishedAt)}</span>
           <span className="h-1 w-1 bg-secondaryDarker rounded-full" />
           <span>

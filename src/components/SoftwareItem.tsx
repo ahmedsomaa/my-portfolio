@@ -22,10 +22,10 @@ export function SoftwareItem({
         className,
       )}
     >
-      <div className="h-full w-full flex flex-col items-center justify-center transition duration-200">
+      <div className="h-full w-full flex flex-col items-center justify-center space-y-2 transition duration-200">
         {icon}
         <div className="group-hover/card:translate-y-2 transition duration-200">
-          <div className="font-normal mb-2 mt-2 lowercase">{title}</div>
+          <div className="font-normal text-center lowercase">{title}</div>
         </div>
       </div>
     </a>

@@ -7,7 +7,7 @@ import CONFIG from '@/config';
 export default function AboutMe() {
   return (
     <>
-      <p className="text-justify leading-6 text-secondaryDark">
+      <p className="text-justify leading-6 text-neutral-500/95">
         {CONFIG.profile.description} I am a full stack software engineer with a
         strong focus in front-end in{' '}
         <Badge title="react" href="https://react.dev/">
@@ -24,7 +24,7 @@ export default function AboutMe() {
         intuitive and enjoyable for users.
       </p>
       <br />
-      <p className="text-justify leading-6 text-secondaryDark">
+      <p className="text-justify leading-6 text-neutral-500/95">
         I have a passion for learning, and I am constantly seeking to improve my
         skills through avid <span className="inline-link">reading</span> and{' '}
         <Link href="/posts">
