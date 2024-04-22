@@ -23,17 +23,17 @@ export default function ToolkitPage() {
           </div>
           <div className="md:px-6">
             <div className="grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-3">
-              {CONFIG.toolkit.SOFTWARE.map(
-                ({ href, icon, title, className }) => (
-                  <SoftwareItem
-                    key={title}
-                    icon={icon}
-                    href={href}
-                    title={title}
-                    className={className}
-                  />
-                ),
-              )}
+              {CONFIG.toolkit.SOFTWARE.sort((a, b) =>
+                a.title.localeCompare(b.title),
+              ).map(({ href, icon, title, className }) => (
+                <SoftwareItem
+                  key={title}
+                  icon={icon}
+                  href={href}
+                  title={title}
+                  className={className}
+                />
+              ))}
             </div>
           </div>
         </div>
