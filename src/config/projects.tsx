@@ -1,6 +1,5 @@
 export const PROJECTS = [
   {
-    featured: true,
     name: 'Sharp Studio',
     slug: 'sharp-studio',
     description: 'Hackable Image Processing',
@@ -8,7 +7,6 @@ export const PROJECTS = [
     link: 'https://sharpstudio.vercel.app',
   },
   {
-    featured: true,
     name: 'Editor Setup',
     slug: 'editor-setup',
     description: 'Find your next optimal Visual Studio Code setup',
@@ -16,7 +14,6 @@ export const PROJECTS = [
     link: 'https://editorsetup.vercel.app',
   },
   {
-    featured: true,
     name: 'Konstant Kreative Ad Analyzer',
     slug: 'kk-ad-analyzer',
     description: 'AI app to analyze image ads using GPT-4 Vision',
@@ -24,7 +21,6 @@ export const PROJECTS = [
     link: 'https://lead-gen-ai.vercel.app/',
   },
   {
-    featured: false,
     name: 'Covid Tracker',
     slug: 'covid-tracker',
     description: 'App to track covid patients',
@@ -32,7 +28,6 @@ export const PROJECTS = [
     link: 'https://github.com/ahmedsomaa/covid-tracker/',
   },
   {
-    featured: false,
     name: 'Store API',
     slug: 'store-api',
     description: 'Node API for an online store',
@@ -40,7 +35,6 @@ export const PROJECTS = [
     link: 'https://github.com/ahmedsomaa/storefront-api',
   },
   {
-    featured: false,
     name: 'ECARD Mobile App',
     slug: 'ecard-app',
     description: "App to streamline the process of fertilizers' distribution",
@@ -49,11 +43,4 @@ export const PROJECTS = [
   },
 ];
 
-export interface IProject {
-  name: string;
-  slug: string;
-  link: string;
-  image: string;
-  featured: boolean;
-  description: string;
-}
+export type IProject = (typeof PROJECTS)[0];
