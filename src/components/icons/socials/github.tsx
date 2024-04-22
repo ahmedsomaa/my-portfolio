@@ -7,7 +7,7 @@ export const GithubIcon = () => {
       height="16px"
       viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-secondaryDarker group-hover:text-[#181717] duration-200"
+      className="text-neutral-500/95 group-hover:text-neutral-50/95 duration-200"
     >
       <path fill="none" d="M0 0h256v256H0z" />
       <path

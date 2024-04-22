@@ -7,7 +7,7 @@ export const XIcon = () => {
       height="16px"
       viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-secondaryDarker group-hover:text-[#000000] duration-200"
+      className="text-neutral-500/95 group-hover:text-[#000000] duration-200"
     >
       <rect width="256" height="256" fill="none" />
       <polygon

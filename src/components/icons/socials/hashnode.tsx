@@ -3,17 +3,14 @@ import React from 'react';
 export const HashnodeIcon = () => {
   return (
     <svg
-      role="img"
       width="16px"
       height="16px"
-      stroke="none"
-      viewBox="0 0 24 24"
       fill="currentColor"
+      viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-secondaryDarker group-hover:text-[#2962FF] duration-200"
+      className="text-neutral-500/95 group-hover:text-[#2962FF] duration-200"
     >
-      <title>Hashnode</title>
-      <path d="M22.351 8.019l-6.37-6.37a5.63 5.63 0 0 0-7.962 0l-6.37 6.37a5.63 5.63 0 0 0 0 7.962l6.37 6.37a5.63 5.63 0 0 0 7.962 0l6.37-6.37a5.63 5.63 0 0 0 0-7.962zM12 15.953a3.953 3.953 0 1 1 0-7.906 3.953 3.953 0 0 1 0 7.906z" />
+      <path d="M106.91,149.09A71.53,71.53,0,0,1,128,200a8,8,0,0,1-16,0,56,56,0,0,0-56-56,8,8,0,0,1,0-16A71.53,71.53,0,0,1,106.91,149.09ZM56,80a8,8,0,0,0,0,16A104,104,0,0,1,160,200a8,8,0,0,0,16,0A120,120,0,0,0,56,80Zm118.79,1.21A166.9,166.9,0,0,0,56,32a8,8,0,0,0,0,16A151,151,0,0,1,163.48,92.52,151,151,0,0,1,208,200a8,8,0,0,0,16,0A166.9,166.9,0,0,0,174.79,81.21ZM60,184a12,12,0,1,0,12,12A12,12,0,0,0,60,184Z"></path>
     </svg>
   );
 };
