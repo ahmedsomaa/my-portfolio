@@ -22,7 +22,7 @@ export default function ToolkitPage() {
             </p>
           </div>
           <div className="md:px-6">
-            <div className="grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-3">
+            <div className="grid grid-cols-3 gap-3 md:grid-cols-4 md:gap-3">
               {CONFIG.toolkit.SOFTWARE.sort((a, b) =>
                 a.title.localeCompare(b.title),
               ).map(({ href, icon, title, className }) => (
