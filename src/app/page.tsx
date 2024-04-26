@@ -9,9 +9,9 @@ export default async function Home() {
         <div className="flex flex-col md:px-6">
           <div className="flex flex-col space-y-2">
             <h1 className="text-4xl text-center">
-              hey there, I&apos;m ahmed ismail!
+              Hi there, I&apos;m Ahmed Ismail!
             </h1>
-            <h2 className="text-2xl text-center lowercase">
+            <h2 className="text-2xl text-center">
               Welcome to my personal space on the internet!
             </h2>
           </div>

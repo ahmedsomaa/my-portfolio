@@ -32,8 +32,11 @@ export default function ProjectsPage() {
       <div className="grid grid-cols-1 space-y-52 pb-10 w-full min-h-[40rem] max-h-[40rem]">
         <div className="flex flex-col space-y-6">
           <div className="space-y-1">
-            <h2 className="text-2xl font-bold text-neutral-50/95 md:px-6 lowercase">
-              my work
+            <h2 className="text-2xl text-neutral-50/95 font-semibold md:px-6 lowercase">
+              my work{' '}
+              <span className="font-medium text-base text-stone-400/95 ">
+                ({projectsCount})
+              </span>
             </h2>
             <p className="text-sm font-light text-neutral-500/95 md:px-6 lowercase">
               a collection of my favorite projects

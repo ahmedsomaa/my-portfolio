@@ -57,7 +57,7 @@ export default function Posts({
             </span>
           </h2>
           <span className="text-sm text-stone-400/95 font-light lowercase md:px-6">
-            explore and read my insightful and helpful blog posts
+            Insightful and helpful content curated for you
           </span>
         </div>
         <div className="flex flex-row space-x-4 text-sm md:px-6 overflow-x-auto line-clamp-1 text-nowrap">
@@ -80,25 +80,20 @@ export default function Posts({
         <div className="space-y-6">
           <div className="flex flex-col md:space-y-1 md:px-2 min-h-[30rem] max-h-[30rem]">
             {filteredPostsCount > 0 ? (
-              filteredPosts
-                .slice(startPage, endPage)
-                .sort(
-                  (a: IPost, b: IPost) =>
-                    new Date(b.metadata.publishedAt).getTime() -
-                    new Date(a.metadata.publishedAt).getTime(),
-                )
-                .map((post: IPost) => {
-                  return (
-                    <PostCard
-                      post={post}
-                      key={post.slug}
-                      views={views[post.slug]}
-                    />
-                  );
-                })
+              filteredPosts.slice(startPage, endPage).map((post: IPost) => {
+                return (
+                  <PostCard
+                    post={post}
+                    key={post.slug}
+                    views={views[post.slug]}
+                  />
+                );
+              })
             ) : (
               <span className="md:px-4 text-neutral-50/95">
-                there are no {_tag} blog posts currently
+                there are no{' '}
+                <span className="font-semibold text-stone-500/95">{_tag}</span>{' '}
+                blog posts currently
               </span>
             )}
           </div>

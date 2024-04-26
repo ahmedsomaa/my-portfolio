@@ -34,7 +34,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         />
         <div className="flex flex-col">
           <span className="font-bold text-neutral-50/95">{project.name}</span>
-          <span className="font-light text-neutral-500/95 lowercase">
+          <span className="font-light text-neutral-500/95">
             {project.description}
           </span>
         </div>
