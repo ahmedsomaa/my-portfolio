@@ -16,7 +16,13 @@ export const metadata = {
 export default async function PostsPage() {
   let allPosts = getPosts();
 
-  let publishedPosts = allPosts.filter((post) => !post.metadata.isDraft);
+  let publishedPosts = allPosts
+    .filter((post) => !post.metadata.isDraft)
+    .sort(
+      (a, b) =>
+        new Date(b.metadata.publishedAt).getTime() -
+        new Date(a.metadata.publishedAt).getTime(),
+    );
 
   const views = (
     await redis.mget<number[]>(
