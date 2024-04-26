@@ -1,5 +1,12 @@
 export const PROJECTS = [
   {
+    name: 'Open Trivia',
+    slug: 'open-trivia',
+    description: ' A multi-round trivia game built with Open Trivia API',
+    image: '/projects/open-trivia.svg',
+    link: 'https://open-trivia-demo.vercel.app',
+  },
+  {
     name: 'Sharp Studio',
     slug: 'sharp-studio',
     description: 'Hackable Image Processing',

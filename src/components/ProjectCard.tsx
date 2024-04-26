@@ -33,9 +33,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           className="w-[40px] h-[40px] rounded-lg"
         />
         <div className="flex flex-col">
-          <span className="font-bold text-neutral-50/95 lowercase">
-            {project.name}
-          </span>
+          <span className="font-bold text-neutral-50/95">{project.name}</span>
           <span className="font-light text-neutral-500/95 lowercase">
             {project.description}
           </span>
