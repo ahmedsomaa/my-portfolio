@@ -1,12 +1,12 @@
 export const EXPERIENCE = [
   {
     id: 4,
-    role: 'FrontEnd Software Engineer',
+    role: 'Mid-level Front-End Software Engineer',
     company: 'Herwin Software',
     companyLogo: '/exp/herwin.webp',
     duration: 'Jan 2024 - Present',
     description:
-      'Working on building the graphical interface for an invoice reconciliation app with Next.js.',
+      'Working on developing a reverse invoice reconciliation application using Next.js.',
   },
   {
     id: 3,
