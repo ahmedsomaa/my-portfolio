@@ -1,0 +1,116 @@
+---
+title: 'Lists with Custom Markers'
+publishedAt: '2024-04-30'
+summary: 'A guide to implementing lists with custom markers'
+slug: 'lists-with-custom-markers'
+featured: 'true'
+image: '/ogs/lists-with-custom-markers.webp'
+tag: 'technical'
+---
+
+
+<TOC>
+- [Introduction](#introduction)
+- [Kicking Off with Custom Markers](#custom-markers)
+- [Conditional Marker Assignments](#conditional-markers)
+- [Conclusion](#conclusion)
+</TOC>
+
+<h2 id="introduction"></h2>
+
+<JustifiedText>
+Hey there, web enthusiasts! 🧙‍♂️ Ready to shake things up with your HTML lists? Move over, boring bullet points and mundane numbers—it's time to bring the fun of emojis to the forefront of your list designs. Whether for decorative flair or to enhance user engagement, let's dive into how you can use emojis to add personality and pizzazz to your lists!
+</JustifiedText>
+
+<h2 id="custom-markers">Kicking Off with Custom Markers</h2>
+
+<JustifiedText>
+First, let's swap out those standard markers with something more expressive. Here's how you can use the `::before` pseudo-element to introduce emojis into your unordered and ordered lists:
+</JustifiedText>
+
+<CodeBlock title="styles.css">
+```css showLineNumbers
+ul {
+    list-style-type: "🚀 ";
+}
+```
+</CodeBlock>
+
+<Image
+    priority
+    width={600}
+    height={400}
+    unoptimized
+    src="/posts/custom-markers.webp"
+    alt="an uordered lists with a rocket emoji marker"
+/>
+
+<JustifiedText>
+In this example, every list item in `ul` starts with a rocket, blasting off each point with style!
+</JustifiedText>
+
+
+<h2 id="conditional-markers">Conditional Marker Assignments</h2>
+
+<JustifiedText>
+Using the `nth-child` CSS selector, we could apply different emojis based on certain conditions. Let's add an emoji that 
+represents the mood on every day of the week.
+</JustifiedText>
+
+<CodeBlock title="styles.css">
+```css showLineNumbers
+ul {
+    list-style-type: none;
+}
+
+li:nth-child(7n + 1)::before {
+    content: "😊"; /* Monday - Happy */
+}
+
+li:nth-child(7n + 2)::before {
+    content: "😔"; /* Tuesday - Sad */
+}
+
+li:nth-child(7n + 3)::before {
+    content: "😄"; /* Wednesday - Joyful */
+}
+
+li:nth-child(7n + 4)::before {
+    content: "😡"; /* Thursday - Angry */
+}
+
+li:nth-child(7n + 5)::before {
+    content: "😅"; /* Friday - Relieved */
+}
+
+li:nth-child(7n + 6)::before {
+    content: "😴"; /* Saturday - Sleepy */
+}
+
+li:nth-child(7n + 7)::before {
+    content: "🎉"; /* Sunday - Celebratory */
+}
+```
+</CodeBlock>
+
+<Image
+    priority
+    width={600}
+    height={400}
+    unoptimized
+    src="/posts/conditional-markers.webp"
+    alt="an uordered list with an emoji for each day of the week"
+/>
+
+<JustifiedText>
+Here, each item in `ul` features a different facial expression, making the list more vibrant and playful.
+</JustifiedText>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<JustifiedText>
+
+Congratulations! You've just transformed your standard lists into engaging, fun-filled displays. Emojis not only add color and emotion to your lists but also make the content more relatable and enjoyable for your audience. Remember, the key to effective web design is not just about presenting information but doing so in a way that resonates with your users.
+
+Why stop here? Experiment with various emojis and configurations to find the perfect match for your site's personality and theme. 🚀
+</JustifiedText>
