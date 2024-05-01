@@ -31,7 +31,11 @@ First, let's swap out those standard markers with something more expressive. Her
 <CodeBlock title="styles.css">
 ```css showLineNumbers
 ul {
-    list-style-type: "🚀 ";
+    list-style-type: none;
+}
+
+li::before {
+    content: "🚀 "
 }
 ```
 </CodeBlock>
