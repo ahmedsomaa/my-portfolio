@@ -43,7 +43,7 @@ export default function ReadingPage() {
               <div key={year}>
                 <h2 className="text-2xl font-bold my-4 md:px-6">
                   {year}{' '}
-                  <span className="font-medium text-base text-stone-400/95">
+                  <span className="font-medium text-xs text-stone-400/95">
                     ({books.length})
                   </span>
                 </h2>

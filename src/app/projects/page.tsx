@@ -34,7 +34,7 @@ export default function ProjectsPage() {
           <div className="space-y-1">
             <h2 className="text-2xl text-neutral-50/95 font-semibold md:px-6 lowercase">
               my work{' '}
-              <span className="font-medium text-base text-stone-400/95 ">
+              <span className="font-medium text-xs text-stone-400/95 ">
                 ({projectsCount})
               </span>
             </h2>
