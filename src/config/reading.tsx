@@ -10,7 +10,7 @@ export const READING = [
   {
     rating: 5,
     finished: false,
-    title: 'React 18 Design Patterns andBest Practices UI',
+    title: 'React 18 Design Patterns and Best Practices UI',
     dateFinished: '2024-04-10',
     author: 'Carlos Santana Roldán',
     link: 'https://www.packtpub.com/product/react-18-design-patterns-and-best-practices-fourth-edition/9781803233109',
