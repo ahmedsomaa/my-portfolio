@@ -8,7 +8,15 @@ export const READING = [
     link: 'https://www.refactoringui.com/',
   },
   {
-    rating: 4.5,
+    rating: 5,
+    finished: false,
+    title: 'React 18 Design Patterns andBest Practices UI',
+    dateFinished: '2024-04-10',
+    author: 'Carlos Santana Roldán',
+    link: 'https://www.packtpub.com/product/react-18-design-patterns-and-best-practices-fourth-edition/9781803233109',
+  },
+  {
+    rating: 4,
     finished: true,
     author: 'Terry Halpin',
     dateFinished: '2023-08-10',
