@@ -6,6 +6,7 @@ import { GmailIcon } from '@/components/icons/software/gmail';
 import { HttpieIcon } from '@/components/icons/software/httpie';
 import { JiraIcon } from '@/components/icons/software/jira';
 import { GoogleMeetIcon } from '@/components/icons/software/meet';
+import { ObsidianIcon } from '@/components/icons/software/obsidian';
 import { StarshipIcon } from '@/components/icons/software/starship';
 import { WindowsTerminalIcon } from '@/components/icons/software/terminal';
 import { VSCodeIcon } from '@/components/icons/software/vscode';
@@ -88,6 +89,13 @@ export const TOOLKIT = {
       href: 'https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&hl=en-eg&gl=EG',
       className:
         'text-[#fff] hover:dark:border-[#fff] hover:bg-gradient-to-br from-gray-50/5 to-[#fff]/5',
+    },
+    {
+      title: 'Obsidian',
+      icon: <ObsidianIcon />,
+      href: 'https://obsidian.md/',
+      className:
+        'text-[#7C3AED] hover:dark:border-[#7C3AED] hover:bg-gradient-to-br from-gray-50/5 to-[#7C3AED]/5',
     },
   ],
 };
