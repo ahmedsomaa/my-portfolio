@@ -21,6 +21,13 @@ export const PROJECTS = [
     link: 'https://editorsetup.vercel.app',
   },
   {
+    name: 'Face AI',
+    slug: 'face-ai',
+    description: "Detect a person's face expressions, age & gender",
+    image: '/projects/face-ai.svg',
+    link: 'https://face-ai.surge.sh/',
+  },
+  {
     name: 'Konstant Kreative Ad Analyzer',
     slug: 'kk-ad-analyzer',
     description: 'AI app to analyze image ads using GPT-4 Vision',
@@ -40,13 +47,6 @@ export const PROJECTS = [
     description: 'Node API for an online store',
     image: '/projects/store-api.svg',
     link: 'https://github.com/ahmedsomaa/storefront-api',
-  },
-  {
-    name: 'ECARD Mobile App',
-    slug: 'ecard-app',
-    description: "App to streamline the process of fertilizers' distribution",
-    image: '/projects/ecard-app.svg',
-    link: 'https://play.google.com/store/apps/details?id=com.newsmartegypt.ecard&pli=1',
   },
 ];
 
