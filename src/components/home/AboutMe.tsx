@@ -38,29 +38,8 @@ export default function AboutMe() {
             writing
           </span>
         </Link>
-        . Currently interested in{' '}
-        <Badge title="typescript" href="https://www.typescriptlang.org/">
-          <Image
-            width="14"
-            height="14"
-            className="!mr-1"
-            alt="TypeScript logomark"
-            src="/logos/typescript-logo.svg"
-          />
-          TypeScript
-        </Badge>{' '}
-        and{' '}
-        <Badge title="golang" href="https://go.dev/">
-          <Image
-            width="14"
-            height="14"
-            className="!mr-1"
-            alt="GoLang logomark"
-            src="/logos/go-logo.svg"
-          />
-          Go
-        </Badge>
-        . Experimenting building apps with{' '}
+        . Currently interested in becoming a design engineer. Experimenting
+        building apps with{' '}
         <Badge title="next.js" href="https://nextjs.org">
           <Image
             width="14"
@@ -71,7 +50,28 @@ export default function AboutMe() {
           />
           Next.js
         </Badge>
-        .
+        ,{' '}
+        <Badge title="typescript" href="https://www.typescriptlang.org/">
+          <Image
+            width="14"
+            height="14"
+            className="!mr-1"
+            alt="TypeScript logomark"
+            src="/logos/typescript-logo.svg"
+          />
+          TypeScript
+        </Badge>{' '}
+        &{' '}
+        <Badge title="tailwindcss" href="https://tailwindcss.com/">
+          <Image
+            width="14"
+            height="14"
+            className="!mr-1"
+            alt="Tailwindcss logomark"
+            src="/logos/tailwindcss.svg"
+          />
+          Tailwindcss
+        </Badge>
       </p>
     </>
   );
