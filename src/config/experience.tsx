@@ -1,7 +1,7 @@
 export const EXPERIENCE = [
   {
     id: 4,
-    role: 'Senior Front-End Software Engineer',
+    role: 'Senior Front-End Engineer',
     company: 'Herwin Software',
     companyLogo: '/exp/herwin.webp',
     duration: 'Jan 2024 - Present',
