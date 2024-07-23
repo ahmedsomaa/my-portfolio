@@ -1,4 +1,5 @@
 import { EmailIcon } from '@/components/icons/socials/email';
+import { FrontendMentorIcon } from '@/components/icons/socials/frontend-mentor';
 import { GithubIcon } from '@/components/icons/socials/github';
 import { HashnodeIcon } from '@/components/icons/socials/hashnode';
 import { LinkedInIcon } from '@/components/icons/socials/linkedin';
@@ -48,6 +49,12 @@ export const PROFILE = {
       platform: 'Hashnode',
       link: 'https://som3aware.hashnode.dev/',
       icon: <HashnodeIcon />,
+    },
+    {
+      id: 'frontend mentor',
+      platform: 'Frontend Mentor',
+      link: 'https://www.frontendmentor.io/profile/ahmedsomaa',
+      icon: <FrontendMentorIcon />,
     },
     {
       id: 'resume',
