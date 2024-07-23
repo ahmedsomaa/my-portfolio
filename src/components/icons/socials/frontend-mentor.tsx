@@ -4,7 +4,8 @@ export const FrontendMentorIcon = () => {
       role="img"
       width="16px"
       height="16px"
-      viewBox="0 0 256 256"
+      fill="currentColor"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       className="text-neutral-500/95 group-hover:text-[#3F54A3] duration-200"
     >
